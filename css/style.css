@@ -1,0 +1,11 @@
+body {
+    background-color:#f62162;
+}
+
+h1 {
+  color:white; 
+  text-transform:uppercase; 
+  font-size:130px; 
+  margin: 50px; 
+  font-family:Verdana, Geneva, sans-serif;
+}
