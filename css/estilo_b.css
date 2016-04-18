@@ -3,12 +3,10 @@
 
 nav {
 	top: 0;
+	height: 64px;
 }
 
 
-nav>ul {
-	height: 8vh;
-}
 
 nav>ul>li {
 	vertical-align: middle;
@@ -31,8 +29,7 @@ nav>ul>li {
 
 #menu{
 	display: inline-block;
-    /* height: 18px; */
-    /* background-color: black; */
+    line-height: 60px;
     position: fixed;
     width: 41px;
     left: 75%;
@@ -148,8 +145,13 @@ nav>ul>li {
     margin-left: 10%;}
 	
 	.trabajos .doble {
-    width: 90%;
-    margin: 10px;
+    width: 100%;
+	margin: 8px 0px;
+
+}
+
+.trabajos .doble p, .trabajos .doble h3{
+	margin: 0px 8px;
 }
 
 .trabajos .single {
@@ -166,12 +168,14 @@ nav>ul>li {
     top: 60%;
 }
 
-#texto_sso{    text-align: end;}    
+#texto_sso{    text-align: end;     width: 95%;}    
 	
 #vanguardias_texto{    text-align: left;
     margin-top: 22px;}
 	
 	#vanguardias{    margin-top: -20px;}
+	
+#vanguardias, #viajeconchicos, #gol, #receptivo, #danza, #poesia, #sso, #fichas, #coasgourmet, #newsletters, #kronnix{background-size: cover;}
 	
 	
 	
