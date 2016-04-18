@@ -21,6 +21,7 @@ nav>ul>li {
 	padding-left: 35px;
     margin-left: 0px;
     height: 45px;
+	line-height: 75px;
 }
 
 #nombre>a{
@@ -135,7 +136,8 @@ nav>ul>li {
 	
 	#bienvenido {
     height: calc(100vh - 118px);
-    width: calc(100% - 80px);    margin-top: 78px;}
+    width: calc(100% - 80px);        
+	margin-top: 66px;}
 	
 	#portfolio {
     width: 100%;}
@@ -163,8 +165,8 @@ nav>ul>li {
 }
 
 .trabajos .single {
-    width: 44%;
-    margin-left: 10px;
+    width: 100%;
+    margin-left: 0px;
 }
 
 .deco {
@@ -201,3 +203,37 @@ nav>ul>li {
 
 .thumbnail{-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
     filter: grayscale(0%);}
+	
+.texto{display: inline-block;width: 44%;
+    text-align: left;}
+
+.trabajos .single .thumbnail {
+    width: 44%;
+    margin-left: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#sso_a, #poesia_a{width: 44%;}
+#sso, #poesia{width: 100%;}
+
+#texto_sso {
+    width: 44%;
+    text-align: left;
+}
+
+#texto_poesia {
+    width: 44%;
+    text-align: right;
+}
+
+#texto_sso .texto{
+    width: 100%;
+}
+
+#texto_poesia .texto{
+    width: 100%;text-align: right;
+}
+
+
+#vanguardias_texto{margin-left: 8px;}
