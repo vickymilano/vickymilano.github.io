@@ -34,7 +34,7 @@ nav>ul>li {
     position: absolute;
     width: 41px;
 	left: 80%;
-    left: calc(100% - 106px);
+    left: calc(100% - 122px);
 	
 }
 
@@ -130,7 +130,7 @@ nav>ul>li {
 .dropdown-content a:hover {background-color: #fafafa}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;    margin-top: -25px;
+.show {display:block;    margin-top: -12px;
     right: 0;}
 	
 	
@@ -237,3 +237,5 @@ nav>ul>li {
 
 
 #vanguardias_texto{margin-left: 8px;}
+
+#popup_poesia img{display: none;}
