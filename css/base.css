@@ -1,0 +1,369 @@
+@charset "UTF-8";
+body {
+	background-color: #ffffff;
+	font-family: ´'GillSans-Medium'; /*-------LLAMAR CSS FUENTES----------*/
+	margin:  0 auto;
+	font: normal 100% 'GillSans-Medium';
+	color: #000000;
+	overflow-x: hidden;
+}
+
+/*-----------------------------------BARRA DE NAVEGACION-----------------------------------*/
+header{
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+
+	}
+
+nav {
+	margin:auto;
+	height: 55px;
+	width: 960px;
+	background-color: white;
+}
+
+#nav_menu {
+	display: none;
+}
+
+nav>ul {
+	
+	
+}
+
+#nombre a{
+	margin-right: 535px;
+    color: #000000;
+	}
+
+nav>ul>li {
+	display: inline-block;
+	text-align: right;
+	font-size: 12px;
+	text-transform: uppercase;
+    vertical-align: bottom;
+    letter-spacing: 2px;
+    line-height: 85px;
+	margin-left: 25px;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: #000000;
+}
+
+
+#menu{
+	display: none;
+}
+
+/*-----------------------------------FIN BARRA DE NAVEGACION-----------------------------------*/
+
+
+/*-----------------------------------SECCION BIENVENIDOS-----------------------------------*/
+
+#bienvenido{
+	text-align: center;
+    height: calc(100vh - 80px);
+    width: calc(100% - 80px);
+    margin: auto;
+    margin-top: 40px;
+    border: solid 1px;
+	margin-bottom: 40px;
+}
+
+.img_principal {
+	text-align: center;
+    height: 80vh;
+    background: url('../img/img_principal.jpg') center center no-repeat;
+    background-size: cover;
+    width: 960px;
+    margin: auto;
+	margin-top: 35px;
+	position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#bienvenido img{
+	position: absolute;
+    z-index: 999;
+    top: calc(50vh - 100px);
+    width: 220px;
+	margin: auto;
+    left: 0;
+    right: 0;
+}
+
+
+.formita {
+	position: relative;
+	z-index: 1;	
+}
+
+div[id^="cuad"]{
+	width: 15px;
+	height: 15px;
+	background-color: #000000;
+}
+#cuad_uno{top: 75%;left: 16.6667%;} #cuad_dos{top: 15%;left: 35%;}#cuad_tres{top: 75%;left: 90%;} #cuad_cuatro{top: 15%;left: 75%;}
+
+div[id^="cua_borde"]{
+	width: 15px;
+	height: 15px;
+	border: 2px solid #000000;
+}
+#cua_borde_uno{top: 50%;left: 16.6667%;}#cua_borde_dos{top: 15%;left: 35%;} #cua_borde_tres{top: 50%;left: 65%;} #cua_borde_cuatro{top: 15%;left: 85%;}
+	
+div[id^="circ"]{
+	width: 17px;
+	height: 17px;
+	border-radius: 10px;
+	background-color: #000000;
+}
+#circ_uno{top: 50%;left: 25%;} #circ_dos{top: 75%;left: 16.6667%;} #circ_tres{top: 50%;left: 75%;} #circ_cuatro{top: 75%;left: 90%;}
+
+div[id^="cir_borde"]{
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+#cir_borde_uno{top: 50%;left: 25%;} #cir_borde_dos{top: 75%;left: 16.6667%;} #cir_borde_tres{top: 50%;left: 85%;} #cir_borde_cuatro{top: 75%;left: 65%;}
+	
+	
+div[id^="linea"]{
+	width: 23px;
+	height: 3px;
+	background-color: #000000;
+}
+	#linea_uno{top: 50%;left: 50%;} #linea_dos{top: 10%;left: 10%;}#linea_tres{top: 50%;left: 70%;} #linea_cuatro{top: 10%;left: 80%;}
+
+
+/*-----------------------------------FIN SECCION BIENVENIDOS-----------------------------------*/
+
+
+
+/*-----------------------------------SECCION PORTFOLIO-----------------------------------*/
+.trabajos{    z-index: 90;
+    position: relative;}
+h2 {
+	font-size: 18px;
+    letter-spacing: 2px;
+	text-transform:uppercase;
+	color: black;
+	font-family:'GillSans-Bold';
+	margin-top: 40px;
+	height: 65px;
+    vertical-align: middle;
+    line-height: 70px;
+	background-color:white;
+	display: inline-block;
+	}
+	
+h3 {
+	font-size: 10px;
+    letter-spacing: 2px;
+	text-transform:uppercase;
+	color: black;
+	font-family:'GillSans-Bold';
+	}
+	
+.mas_info h3{
+	font-size: 12px;
+	margin-bottom: 12px;
+	margin-top: 24px;
+	}
+	
+.trabajos p{
+	font-size: 10px;
+    letter-spacing: 2px;
+	color: black;
+	font-family:'GillSans-Medium';
+	}
+	
+p{
+	font-size: 12px;
+	color: black;
+	font-family:'GillSans-Medium';
+	line-height: 14px;
+}
+	
+	#portfolio span{
+		background-color: #000000;
+    	width: 100px;
+    	height: 30px;
+    	display: inline-block;
+    	vertical-align: middle;
+    	margin-top: 40px;
+    	margin-left: 264px;
+	}
+	#portfolio span:first-of-type{
+		width: 200px;
+    	margin-right: 165px;
+    	margin-left: 0px;
+	}
+		
+		
+#portfolio{
+	text-align: justify;
+	width: 874px;
+    margin: auto;
+	padding-top: 40px;
+}
+.trabajos li{
+	/*background-color: #eeeeee;*/
+	display:inline-block;
+	margin: 8px;
+}
+.trabajos .single{
+	width: 204px;
+}
+.trabajos .doble{
+	width: 408px;
+}
+
+.trabajos .doble .thumbnail{
+	height: 273px;
+	background-color: #ececec;
+}
+
+.trabajos .single .thumbnail{
+	height: 273px;
+	background-color:  #ececec;
+}
+
+#vanguardias_texto, #texto_poesia {
+	text-align: right;
+	margin-top: -10px;}
+	
+#vanguardias_texto p:nth-child(3), #texto_poesia p:nth-child(3), #texto_sso p:nth-child(3){
+	
+	    margin-bottom: -8px;}
+	
+#vanguardias{
+	background: url('../img/img_vanguardias.jpg') center center no-repeat;
+	}
+#vanguardias:hover{
+	background: url('../img/img_vanguardias_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+
+#coasgourmet{
+	background: url('../img/img_coasgourmet.jpg') center center no-repeat;
+	}	
+#coasgourmet:hover{
+	background: url('../img/img_coasgourmet_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}	
+	
+#viajeconchicos{
+	background: url('../img/img_viajeconchicos.jpg') center center no-repeat;
+	}	
+#viajeconchicos:hover{
+	background: url('../img/img_viajeconchicos_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+#poesia{
+	background: url('../img/img_poesia.jpg') center center no-repeat;
+	}	
+
+#poesia:hover{
+	background: url('../img/img_poesia_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+#gol{
+	background: url('../img/gol.jpg') center center no-repeat;
+	}	
+
+#gol:hover{
+	background: url('../img/gol_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+#fichas{
+	background: url('../img/fichas.jpg') center center no-repeat;
+	}	
+
+#fichas:hover{
+	background: url('../img/fichas_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+	
+	#danza{
+	background: url('../img/danza.jpg') center center no-repeat;
+	}	
+
+#danza:hover{
+	background: url('../img/danza_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+		#receptivo{
+	background: url('../img/receptivo.jpg') center center no-repeat;
+	}	
+
+#receptivo:hover{
+	background: url('../img/receptivo_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+	#sso{
+	background: url('../img/sso.jpg') center center no-repeat;
+	}	
+
+#sso:hover{
+	background: url('../img/sso_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+	#newsletters{
+	background: url('../img/newsletters.jpg') center center no-repeat;
+	}	
+
+#newsletters:hover{
+	background: url('../img/newsletters_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+	
+		#kronnix{
+	background: url('../img/kronnix.jpg') center center no-repeat;
+	}	
+
+#kronnix:hover{
+	background: url('../img/kronnix_2.jpg') center center no-repeat;
+	cursor: pointer;
+	}
+
+
+
+
+
+
+/*-----------------------------------FIN SECCION PORTFOLIO-----------------------------------*/
+
+.deco{    position: absolute;
+    width: 880px;
+    height: 1800px;}
+
+
+.deco #cua_borde_uno{top: 57%;left: 30.6667%;}
+.deco #cua_borde_dos{top: 3%;left: 9%;}
+.deco #cua_borde_tres{top: 50%;left: 65%;} .deco #cua_borde_cuatro{top: 13%;left: 85%;}
+
+.deco #circ_uno{top: 24%;left: 56%;} .deco #circ_dos{top: 68%;left: 45%;} .deco #circ_tres{top: 2%;left: 18%;} #circ_cuatro{top: 75%;left: 90%;}
+
+.deco #cir_borde_uno{top: 50%;left: 25%;} .deco #cir_borde_dos{top: 75%;left: 16.6667%;} .deco #cir_borde_tres{top: 50%;left: 85%;} .deco #cir_borde_cuatro{top: 75%;left: 86%;}
+	
+
+.deco #linea_uno{top: 50%;left: 50%;} .deco #linea_dos{top: 10%;left: 10%;}.deco #linea_tres{top: 27%;left: 70%;} .deco #linea_cuatro{top: 10%;left: 80%;}
+
+.deco #cuad_uno{top: 90%;left: 80%;} .deco #cuad_dos{top: 9%;left: 205%;}.deco #cuad_tres{top: 75%;left: 90%;} .deco #cuad_cuatro{top: 15%;left: 75%;}

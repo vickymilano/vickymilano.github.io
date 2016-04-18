@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('GillSansMTPro-Light.eot');
+  src: url('GillSansMTPro-Light.woff2') format('woff2'),
+       url('GillSansMTPro-Light.woff') format('woff'),
+       url('GillSansMTPro-Light.ttf') format('truetype'),
+       url('GillSansMTPro-Light.svg#GillSansMTPro-Light') format('svg'),
+       url('GillSansMTPro-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans-Medium';
+  src: url('GillSansMTPro-Medium.eot');
+  src: url('GillSansMTPro-Medium.woff2') format('woff2'),
+       url('GillSansMTPro-Medium.woff') format('woff'),
+       url('GillSansMTPro-Medium.ttf') format('truetype'),
+       url('GillSansMTPro-Medium.svg#GillSansMTPro-Medium') format('svg'),
+       url('GillSansMTPro-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSans-Bold';
+  src: url('GillSansMTPro-Bold.eot');
+  src: url('GillSansMTPro-Bold.woff2') format('woff2'),
+       url('GillSansMTPro-Bold.woff') format('woff'),
+       url('GillSansMTPro-Bold.ttf') format('truetype'),
+       url('GillSansMTPro-Bold.svg#GillSansMTPro-Bold') format('svg'),
+       url('GillSansMTPro-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
