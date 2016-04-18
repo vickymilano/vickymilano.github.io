@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-	color: #000000;
+	color: #000000; 
 }
 
 
@@ -245,107 +245,60 @@ p{
 #vanguardias_texto p:nth-child(3), #texto_poesia p:nth-child(3), #texto_sso p:nth-child(3){
 	
 	    margin-bottom: -8px;}
+		
+.thumbnail{-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);}
+	
+.thumbnail:hover{-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);}
 	
 #vanguardias{
-	background: url('../img/img_vanguardias.jpg') center center no-repeat;
-	}
-#vanguardias:hover{
 	background: url('../img/img_vanguardias_2.jpg') center center no-repeat;
-	cursor: pointer;
+	
 	}
+
 
 #coasgourmet{
-	background: url('../img/img_coasgourmet.jpg') center center no-repeat;
-	}	
-#coasgourmet:hover{
 	background: url('../img/img_coasgourmet_2.jpg') center center no-repeat;
-	cursor: pointer;
 	}	
+
 	
 #viajeconchicos{
-	background: url('../img/img_viajeconchicos.jpg') center center no-repeat;
-	}	
-#viajeconchicos:hover{
 	background: url('../img/img_viajeconchicos_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
+	}	
+
 	
 #poesia{
-	background: url('../img/img_poesia.jpg') center center no-repeat;
-	}	
-
-#poesia:hover{
 	background: url('../img/img_poesia_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
+	}	
 	
 #gol{
-	background: url('../img/gol.jpg') center center no-repeat;
-	}	
-
-#gol:hover{
 	background: url('../img/gol_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
+	}	
 	
 #fichas{
-	background: url('../img/fichas.jpg') center center no-repeat;
-	}	
-
-#fichas:hover{
 	background: url('../img/fichas_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
-	
-	
-	#danza{
-	background: url('../img/danza.jpg') center center no-repeat;
 	}	
-
-#danza:hover{
+	
+#danza{
 	background: url('../img/danza_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
-	
-		#receptivo{
-	background: url('../img/receptivo.jpg') center center no-repeat;
 	}	
 
-#receptivo:hover{
+#receptivo{
 	background: url('../img/receptivo_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
-	
-	#sso{
-	background: url('../img/sso.jpg') center center no-repeat;
 	}	
-
-#sso:hover{
+	
+#sso{
 	background: url('../img/sso_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
-	
-	#newsletters{
-	background: url('../img/newsletters.jpg') center center no-repeat;
 	}	
 
-#newsletters:hover{
+#newsletters{
 	background: url('../img/newsletters_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
-	
-		#kronnix{
-	background: url('../img/kronnix.jpg') center center no-repeat;
 	}	
 
-#kronnix:hover{
+#kronnix{
 	background: url('../img/kronnix_2.jpg') center center no-repeat;
-	cursor: pointer;
-	}
-
-
-
-
+	}	
 
 
 /*-----------------------------------FIN SECCION PORTFOLIO-----------------------------------*/
