@@ -230,10 +230,9 @@ a:hover{
 	cursor: pointer !important;
 }
 
-li {
-             left: -21px;
-}           
+      
 
-li .bx-clone{
-             display: none;
+
+.bx-clone {
+    display: none;
 }
