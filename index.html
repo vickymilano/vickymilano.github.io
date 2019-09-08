@@ -1,458 +1,209 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Vicky Milano</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    
-    <link href="css/resetear.css" rel="stylesheet" type="text/css">
-    <link href="fonts/fonts.css" rel="stylesheet" type="text/css">
-    <link href="css/stylesheet.css" rel="stylesheet"  />
-    <link href="css/base.css" rel="stylesheet" type="text/css">
-
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="js/modernizr.custom.js"></script>
-		<script src="js/jquery.fullscreen-popup.js"></script>
-		<script src="js/jquery.bxslider.min.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vicky Milano</title>
 		
-        <!-- bxSlider CSS file -->
-		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 		
-		<link href="css/estilo_b.css" rel="stylesheet" media="(min-width: 0px) and (max-width: 799px)">
-        
-        
-  <script>
-   $(document).ready(function(){
-  $('.bxslider').bxSlider({
-  	  pager: false,
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: '>',
-	  prevText: '<',
-	  useCSS: false,  
-  });
-  $('.bxslider2').bxSlider({
-	  pager: false,
-	  nextSelector: '#slider-next2',
-	  prevSelector: '#slider-prev2',
-	  nextText: '>',
-	  prevText: '<',
-	  useCSS: false,
-  });
-   $('.bxslider3').bxSlider({
-	  pager: false,
-	  nextSelector: '#slider-next3',
-	  prevSelector: '#slider-prev3',
-	  nextText: '>',
-	  prevText: '<',
-	  useCSS: false,
-  });
-     $('.bxslider5').bxSlider({
-		  pager: false,
-		  nextSelector: '#slider-next5',
-		  prevSelector: '#slider-prev5',
-		  nextText: '>',
-		  prevText: '<',
-		  useCSS: false,
-  });
-     $('.bxslider6').bxSlider({
-		 pager: false,
-		 nextSelector: '#slider-next6',
-		 prevSelector: '#slider-prev6',
-		 nextText: '>',
-		 prevText: '<',
-		 useCSS: false, 
-  });
-});
-  </script>
-  <script>  
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+		<link href="css/resetear.css" rel="stylesheet" type="text/css">
+		<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet"  />
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-          </script>
-          
-<script>
+		<script>  
+			function dropdownDisplay() {
+				document.getElementById("dropdown-content").classList.toggle("show");
+				document.body.classList.toggle("open");
+			}
 
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+			function caseDisplay() {
+				document.getElementById("case-admin").classList.toggle("show");
+				document.body.classList.toggle("open");
+			}
 
-</script>
-        
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				  	var target = $(this.hash);
+				  	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			  });
+			});
 
-</head>
+		</script>
+	</head>
 
-<body>
+	<body>
 
-<!-- BARRA DE NAVEGACION -->
-    <header>
-        <nav>
-            <ul>
-                <li id="nombre"><a href="index.html">Vicky Milano</a></li>
-                <li class="link"><a href="#portfolio">Portfolio</a></li>
-                <li class="link"><a href="img/MVMILANO_CV_2016.pdf" target="_blank">Yo</a></li>
-                <li class="link"><a href="mailto:vicky_0802@hotmail.com?Subject=Hola">Contacto</a></li>
-                
-           <li id="menu">
-                 <div class="dropdown">
-  					<button onclick="myFunction()" class="dropbtn"></button>
-  					<div id="myDropdown" class="dropdown-content">
-  
-                       <a href="#portfolio">Portfolio</a>
-                       <a href="img/MVMILANO_CV_2016.pdf" target="_blank">Yo</a>
-                       <a href="mailto:vicky_0802@hotmail.com?Subject=Hola">Contacto</a>
+	<!-- NAV BAR -->
+		<header>
+			<nav>
+				<ul>
+					<li id="nombre" class="menu-link"><a href="index.html">Vicky Milano</a></li>
+					<button onclick="dropdownDisplay()" class="dropdown-btn"></button>
+					<span id="dropdown-content" class="menu-dropdown">
+						<button onclick="dropdownDisplay()" class="close-btn"></button>
+						<li class="menu-link"><a href="#work">Work</a></li>
+						<li class="menu-link"><a href="#aboutme" target="_blank">About Me</a></li>
+						<li class="menu-link"><a href="#">Let's talk</a></li>
+					</span>
+				</ul> 
+			</nav>  
+		</header>	
+	<!-- NAV BAR -->
+		
+	<!-- HERO -->
+		<section class="hero">
 
-  					</div>
-            	</div>
-            </li>
- 		</ul>
-            
-        </nav>  
-    </header>
-        
-<!-- FIN BARRA DE NAVEGACION -->
-    
-<!-- PAGINA PRINCIPAL-->
-    <section id="bienvenido">
- 
-        <a href="#portfolio"><img src="img/hola.png"></a>
-    	<!-- DECO FONDO-->
-       	<div class="formita" id="cuad_uno"></div>
-       
-        <div class="formita" id="cua_borde_dos"></div>
-        
-        <div class="formita" id="circ_uno"></div>
-        <div class="formita" id="circ_dos"></div>
-        
-        <div class="formita" id="cir_borde_uno"></div>
-        <div class="formita" id="cir_borde_dos"></div>
-        
-        <div class="formita" id="linea_uno"></div>
-        <div class="formita" id="linea_dos"></div>
-        
-        <div class="formita" id="cuad_tres"></div>
-        <div class="formita" id="cuad_cuatro"></div>
-        
-        <div class="formita" id="cua_borde_tres"></div>
-        
-        <div class="formita" id="circ_cuatro"></div>
-        
-        <div class="formita" id="cir_borde_tres"></div>
-       
-        <div class="formita" id="linea_cuatro"></div>
-        <!-- FIN FONDO-->
-    
-    </section>
-    
-<!-- FIN PAGINA PRINCIPAL-->
+			<div class="welcome">
+				  <h2><span>Hi!</span> I'm Vicky Milano</h2>
+				  <h1>A <span>product designer</span> who wants to change the world.</h1>
+				  <h3>[one pixel at a time]</h3>
+			</div>
+			<div class="scroll">
+				<a href="#work"><img src="img/arrow-bottom.png" /></a>
+			</div>
 
+			<!-- DECO FONDO-->
+			<div class="shapes">
+				<div class="formita" id="cua_borde_dos"></div>
+				<div class="formita" id="cir_borde_dos"></div>
+				<div class="formita" id="linea_dos"></div>
+				<div class="formita" id="cuad_tres"></div>
+				<div class="formita" id="cuad_cuatro"></div>
+				<div class="formita" id="cir_borde_tres"></div>
+				<div class="formita" id="linea_cuatro"></div>
+			</div>
+			<!-- FIN FONDO-->
+		</section>
+	<!-- FIN HERO -->
 
+	<!-- WORK -->
+	<section id="work">
+		<h3>[Work]</h3>
 
-<!-- PAGINA PORTFOLIO-->
-    <section id="portfolio">
-      <span>&nbsp;</span>
-    <h2>Portfolio</h2>
-    
-    <span>&nbsp;</span>
-    
-    <div class="deco">
-	     <div class="formita" id="cuad_uno"></div>
-         <div class="formita" id="cua_borde_dos"></div>  
-         <div class="formita" id="circ_uno"></div>
-         <div class="formita" id="circ_dos"></div>
-         <div class="formita" id="cuad_dos"></div>  
-         <div class="formita" id="cua_borde_uno"></div>
-         <div class="formita" id="cir_borde_cuatro"></div>  
-         <div class="formita" id="linea_tres"></div>
-         <div class="formita" id="cua_borde_cuatro"></div>
-         <div class="formita" id="circ_tres"></div>
-     </div>
+		<div class="study">
+			<div class="study-arrow">
+			</div>
+			<div class="study-information">
+				<h2>Admin <strong>Nube</strong></h2>
+				<ul>
+					<li>Information Architecture</li>
+					<li>UX</li>
+					<li>UI</li>
+				</ul>
+				<p>A redesign of Tiendanube/Nuvemshop administrator, understanding carefully the needs of its users and how to create a better experience for a product that they use every day.</p>
+				<button onclick="caseDisplay()" href="#">See more</a>
+			</div>
+			<div class="study-img">
 
-    <ul class="trabajos">
-    
-     <!-- VANGUARDIAS-->
-        <li class="single" id="vanguardias_texto">
-        	<a class="open-popup" href="#popup"><h3>Vanguardias</h3></a>
-        	<p>Proyecto personal</p>
-        	<p>Video</p><br>
-        </li>
-        <li class="doble">
-        	<a class="open-popup" href="#popup_vanguardias">
-            	<div class="thumbnail" id="vanguardias"></div>
-            </a>
-                <div class="mas_info" id="popup_vanguardias" style="display: none; width: 640px; color:#fff">
-                <iframe src="https://player.vimeo.com/video/71996751" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <h3>Vanguardias</h3>
-                <p>Una animación en stop motion que explica el concepto de como funcionan las vanguardias bajo mi punto de vista.</br>
-                Trabajo realizado para la clase de Diseño Gráfico Publicitario II mientras cursaba la carrera de diseño multimedial en la Escuela Da Vinci en la ciudad de Buenos Aires.</p>
-            </div>
-        </li>
-        
-<!--FIN VANGUARDIAS-->
-         
-         
- <!-- COASGOURMET-->
-        <li class="single">
-        	<a class="open-popup" href="#popup_coasgourmet">
-            	<div class="thumbnail" id="coasgourmet"></div>
-            </a>
-            <div class="texto"><br><a class="open-popup" href="#popup_coasgourmet"><h3>Coasgourmet 2014</h3></a>
-        	<p>Estudio Diseño Bufalo</p>
-        	<p>Imagen Corporativa</p></div>
-            
-            <div class="mas_info" id="popup_coasgourmet" style="display: none; width: 640px; color:#fff">
-            	<ul class="bxslider">
-                  <li><img src="img/coasgourmet_a.jpg"/></li>
-                  <li><img src="img/coasgourmet_b.jpg"/></li>
-                  <li><img src="img/coasgourmet_c.jpg"/></li>
-                </ul>
-                <div class="outside">
-  					<h3><span id="slider-prev"></span> <span id="slider-next"></span></h3>
-				</div>
-				<h3>COASGOURMET</h3>
-				<p>Proyecto realizado trabajando para el estudio de diseño Diseño Bufalo. Responsable del diseño de la imagen del evento COASGOURMET 2014, cuando los mejores Restaurantes de Buenos Aires ofrecen un menú solidario a beneficio de COAS. Una vez diseñado el sistema gráfico fui responsable de diseñar todas las piezas que lo componían (flyers, menu, publicidades, etc), y del diseño y programación de la web. </p>
+			</div>
 		</div>
-        </li>
-<!-- FIN COASGOURMET-->  
 
-<!-- VIAJE CON CHICOS-->      
-        <li class="doble">
-        	<a class="open-popup" href="#popup_viajeconchicos"><div class="thumbnail" id="viajeconchicos"></div></a>
-            <br><a class="open-popup" href="#popup_viajeconchicos"><h3>Viaje con Chicos</h3></a>
-        	<p>Estudio Diseño Bufalo</p>
-        	<p>Website</p>
-            
-             <div class="mas_info" id="popup_viajeconchicos" style="display: none; width: 640px; color:#fff">
-            	<ul class="bxslider2">
-                  <li><img src="img/viajeconchicos_a.jpg"/></li>
-                  <li><img src="img/viajeconchicos_b.jpg"/></li>
-                  <li><img src="img/viajeconchicos_c.jpg"/></li>
-                  
-                </ul>
-                <div class="outside">
-  					<h3><span id="slider-prev2"></span> <span id="slider-next2"></span></h3>
-				</div>
-				<h3>Viaje con Chicos</h3>
-				<p>Proyecto realizado trabajando para el estudio de diseño Diseño Bufalo. Formé parte del equipo de diseño del rediseño de la imagen de "Viaje con chicos", empresa de turismo orientada al paquetes familiares. A su vez, fui responsable de la programacion del nuevo sitio, incluyendo la implementacion de Wordpress para que la compañia pueda tener control de absolutamente todo el contenido de la web, y su version mobile.</p>
+
+		<div class="behance">
+			<h2>Not just <strong>a one-trick designer</strong></h2>
+			<p>Checkout <a href="https://www.behance.net/vickymilano?tracking_source=search-all%7Cvicky%20milano">my behance</a> for other cool stuff.</p>
 		</div>
-        </li>
-<!-- FIN VIAJE CON CHICOS-->
+	</section>
+	<!-- FIN WORK -->
 
-<!-- POESIA-->  
-        <li class="single" id="texto_poesia">
-        	<div class="texto"><a class="open-popup" href="#popup_poesia"><h3>Benetton Live Window</h3></a>
-        	<p>United colors of benetton</p>
-        	<p>Video</p>
-            <br></div>
-        </li>
-            
-        <li class="single" id="poesia_a">
-        	<a class="open-popup" href="#popup_poesia"><div class="thumbnail" id="poesia"></div></a>
-            <div class="mas_info" id="popup_poesia" style="display: none; width: 640px; color:#fff">
-            <iframe src="https://player.vimeo.com/video/36652528" width="256" height="454" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin:auto;"></iframe>
-            <img src="img/poesia_a.jpg" width="256" height="454"/>
-			<h3>Benetton Live Window</h3>
-			<p>Video para un concurso de Benetton Live WIndow sobre el día de la poesía. El video fue seleccionado y reproducido en las ciudades de Barcelona y Milan. </p>
+	<!-- ME -->
+	<section id="aboutme">
+		<h3>[About me]</h3>
+		<div class="aboutme-information">
+			<h2>I'm <span class="js-info-changer">Vicky</span></h2>
+			<p class="subtitle">Passionate designer, amateur aerialist and creative problem-solver.</p>
+			<p>Last 3 years I have been working at Tiendanube / Nuvemshop as a Product designer, with  
+
+I lived in three countries, learnt five languages, and always had plans. I can’t stay still, I love to mix into my life as many experiences as I can, from aerial arts to vjing and mapping, I want lo learn it all. 
+</p>
 		</div>
-        </li>
-<!-- FIN POESIA--> 
-
-<!-- FICHAS-->         
-        <li class="single">
-        	<a class="open-popup" href="#popup_fichas"><div class="thumbnail" id="fichas"></div></a>
-            <div class="texto"><br><a class="open-popup" href="#popup_fichas"><h3>Fichas de capacitación</h3></a>
-        	<p>Estudio Diseño Bufalo</p>
-        	<p>Diseño Editorial</p>
-            </div>
-            <div class="mas_info" id="popup_fichas" style="display: none; width: 640px; color:#fff">
-            <ul class="bxslider3">
-                  <li><img src="img/fichas_a.jpg"/></li>
-                  <li><img src="img/fichas_b.jpg"/></li>
-                  <li><img src="img/fichas_c.jpg"/></li>
-                  
-                </ul>
-                <div class="outside">
-  					<h3><span id="slider-prev3"></span> <span id="slider-next3"></span></h3>
-				</div>
-           
-			<h3>Fichas de capacitación</h3>
-			<p>Proyecto realizado trabajando para el estudio de diseño Diseño Bufalo. Diseño y producción de fichas de capacitación semanales para La Caja ART.</p>
-		</div>
-        </li>
-<!-- FIN FICHAS-->          
-
-<!-- GOL-->           
-    <li class="doble">
-        	<a class="open-popup" href="#popup_gol"><div class="thumbnail" id="gol"></div></a>
-            <br><a class="open-popup" href="#popup_gol"><h3>GOL | Tipografía Kinética</h3></a>
-        	<p>Proyecto Personal</p>
-        	<p>Video</p>
-            
-               <div class="mas_info" id="popup_gol" style="display: none; width: 640px; color:#fff">
-            <iframe src="https://player.vimeo.com/video/97297692" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin:auto;"></iframe>
-			<h3>GOL | Tipografía Kinética</h3>
-			<p>Un trabajo personal de tipografía kinetica basado en el relato de Victor Hugo Morales, sobre el gol de Diego Maradona en el mundial del 86.</p>
-		</div>
-        </li>
-<!-- FIN GOL-->          
-
-<!-- Newsletters-->         
-        <li class="single">
-        	<a class="open-popup" href="#popup_newsletters"><div class="thumbnail" id="newsletters"></div></a>
-            <div class="texto">
-            <br><a class="open-popup" href="#popup_newsletters"><h3>Newsletters</h3></a>
-        	<p>Estudio Diseño Bufalo</p>
-        	<p>Diseño Web</p></div>
-            
-            <div class="mas_info" id="popup_newsletters" style="display: none; width: 640px; color:#fff">
-                  <img src="img/newsletter_a.jpg"/>
-                
-           
-			<h3>Newsletters</h3>
-			<p>Proyecto realizado trabajando para el estudio de diseño Diseño Bufalo. Diseño y producción de newsletters (en forma de landing) semanales para el área de receptivo de la agencia de turismo: Action Travel.</p>
-		</div>
-        </li>
-<!-- FIN Newsletters--> 
-
-<!-- SSO-->         
-        <li class="single" id="sso_a">
-        	<a class="open-popup" href="#popup_sso"><div class="thumbnail" id="sso"></div></a>
-           </li> 
-           <li class="single" id="texto_sso">
-            <div class="texto"><a class="open-popup" href="#popup_sso"><h3>Programa SSO</h3></a>
-        	<p>Estudio Diseño Bufalo</p>
-        	<p>Diseño Editorial</p><br></div>
-            <div class="mas_info" id="popup_sso" style="display: none; width: 640px; color:#fff">
-            <ul class="bxslider5">
-                  <li><img src="img/sso_a.jpg"/></li>
-                  <li><iframe width="640" height="360" src="https://www.youtube.com/embed/LQleInHF5ZU" frameborder="0" allowfullscreen></iframe></li>
-                  <li><img src="img/sso_b.jpg"/></li>
-                  
-                </ul>
-                <div class="outside">
-  					<h3><span id="slider-prev5"></span> <span id="slider-next5"></span></h3>
-				</div>
-           
-			<h3>Fichas de capacitación</h3>
-			<p>Proyecto realizado trabajando para el estudio de diseño Diseño Bufalo. Diseño y producción de diferentes piezas para el Programa Abierto de Formación en Seguridad y Salud Ocupacional, realizado por La Caja ART y la Universidad Nacional de Tres de Febrero.</p>
-		</div>
-        </li>
-<!-- FIN SSO--> 
-
-<!-- RECEPTIVO-->           
-    <li class="doble">
-        	<a class="open-popup" href="#popup_receptivo"><div class="thumbnail" id="receptivo"></div></a>
-            <br><a class="open-popup" href="#popup_receptivo"><h3>ActionTravel Receptivo</h3></a>
-        	<p>Estudio Diseño Bufalo</p>
-        	<p>Web</p>
-            
-               <div class="mas_info" id="popup_receptivo" style="display: none; width: 640px; color:#fff">
-               
-               <ul class="bxslider6">
-                  
-                  
-                  <li><img src="img/receptivo_a.jpg"/></li>
-                  <li><img src="img/receptivo_b.jpg"/></li>
-                  <li><img src="img/receptivo_c.jpg"/></li>
-                  
-                </ul>
-                <div class="outside">
-  					<h3><span id="slider-prev6"></span> <span id="slider-next6"></span></h3>
-				</div>
-            
-			<h3>ActionTravel Receptivo</h3>
-			<p>Proyecto realizado trabajando para el estudio de diseño Diseño Bufalo. A cargo del diseño y la programación, incluyendo la implementación de wordpress, de la pagina de turismo receptivo de la empresa ActionTravel.</p>
-		</div>
-        </li>
-<!-- FIN RECEPTIVO-->
-
-
-<!-- DANZA-->           
-    <li class="doble">
-        	<a class="open-popup" href="#popup_danza"><div class="thumbnail" id="danza"></div></a>
-            <br><a class="open-popup" href="#popup_danza"><h3>Yo podría ser un árbol</h3></a>
-        	<p>Proyecto Personal</p>
-        	<p>Video</p>
-            
-               <div class="mas_info" id="popup_danza" style="display: none; width: 640px; color:#fff">
-            <iframe src="https://player.vimeo.com/video/88322468" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin:auto;"></iframe>
-			<h3>Yo podría ser un árbol</h3>
-			<p>Un trabajo personal de video danza presentado en la Compañia Nacional de Danza. y elejido como primer premio en el concurso.</p>
-		</div>
-        </li>
-<!-- FIN DANZA-->  
-
-<!-- Newsletters-->         
-        <li class="single">
-        	<a class="open-popup" href="#popup_kronnix"><div class="thumbnail" id="kronnix"></div></a><div class="texto"><br>
-            <a class="open-popup" href="#popup_kronnix"><h3>Logo Animado</h3></a>
-        	<p>Kronnix</p>
-        	<p>Motion</p></div>
-            <div class="mas_info" id="popup_kronnix" style="display: none; width: 640px; color:#fff">
-            <iframe src="https://player.vimeo.com/video/163260420" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin:auto;"></iframe>
-           
-			<h3>Kronnix</h3>
-			<p>Trabajo freelance. Animación del logo para la compañia de transportes: Kronnix.</p>
-		</div>
-        </li>
-<!-- FIN KRONNIX-->     
-    
-    </ul>
-
-
-   
-
 	</section>
 
 
-<!-- cierra Portfolio -->
-    
-    
 
-    
-<!-- FIN PORTFOLIO-->
 
-  
-<script>
 
-			$(function() {
-				$(".open-popup").fullScreenPopup({
-					bgColor: '#ffffff',
-					animationSpeed: 200
-				});
-			});
-		</script>
-        
 
-        
-       
 
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--- WORK CASE STUDIES --->
+	<div id="case-admin" class="single-case">
+		<header>
+				<nav>
+					<ul>
+						<li id="nombre" class="menu-link"><a href="index.html" onclick="caseDisplay()">Vicky Milano</a></li>
+						<button onclick="caseDisplay()" class="close-case"></button>
+					</ul> 
+				</nav>  
+		</header>
+		<section class="case-hero">
+			<div class="case-detail">
+				<h1>Admin <span>Nube</span></h1>
+				<h4>Mission:</h4>
+				<p>Redesign the UX and UI of Tiendanube/Nuvemshop administrator making it easier to use.</p>
+				<br>
+				<br>
+				<h4>Role:</h4>
+				<p> Product designer</p>
+				<br>
+			</div>
+			<div class="case-img">
+				<img src="img/admin-hero.png" />
+			</div>
+		</section>
+
+		<section class="case-description">
+			<h2><span></span>Understanding</h2>
+			<h4>Interviews</h4>
+			<h4>Card Sorting</h4>
+			<h4>Quantitative data</h4>
+			<h4>Business mindset</h4>
+		</section>
+
+		<section class="case-description">
+			<h1><span></span>Design</h1>
+
+			<div class="case-two-columns">
+				<div class="left">
+					<h4>1. Reorganization of the <span>product arquitecture</span></h4>
+					<p>Based on all the feedback and information gathered, I worked on the creation of a new arichitecture for the product. The objective was to create something aligned with the users mindset, so that it would make sense for them where to find each thing. 
+	Also it focused on creating a user flow that enabled maximum optimization depending on the way the users used the platform.</p>
+				</div>
+				<div class="right">
+					<img src="img/admin-architecture.jpg" />
+				</div>
+			</div>
+
+			<h4>2. Creation of <span>low definition prototypes</span></h4>
+			<p>Created low definition prototypes to define well the user flows, together with some UI decisions. First, I worked on pen and paper, to experiment many different paths easily and effectively. Then I moved on to creating the wireframes, first ver basics, and the more detailed in order to be able to test them.</p>
+			<h4>3. <span>Testing</span> with users </h4>
+			<h4>4. Learn and <span>iterate</span></h4>
+			<h4>5. Defining <span>the MVP</span></h4>
+		</section>
+	</div>
+
+
+	</body>
 </html>

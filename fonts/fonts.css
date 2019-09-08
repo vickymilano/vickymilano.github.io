@@ -34,3 +34,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bodoni-Book';
+  src: url('Bodoni-Book.eot');
+  src: url('Bodoni-Book.woff2') format('woff2'),
+       url('Bodoni-Book.woff') format('woff'),
+       url('Bodoni-Book.ttf') format('truetype'),
+       url('Bodoni-Book.svg#Bodoni-Book') format('svg'),
+       url('Bodoni-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni-Bold';
+  src: url('Bodoni-Bold.eot');
+  src: url('Bodoni-Bold.woff2') format('woff2'),
+       url('Bodoni-Bold.woff') format('woff'),
+       url('Bodoni-Bold.ttf') format('truetype'),
+       url('Bodoni-Bold.svg#Bodoni-Bold') format('svg'),
+       url('Bodoni-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

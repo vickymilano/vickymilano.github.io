@@ -1,11 +1,460 @@
 body {
-    background-color:#f62162;
+	background-color: #ffffff;
+	font-family: ´'GillSans-Medium'; /*-------LLAMAR CSS FUENTES----------*/
+	margin:  0 auto;
+	font: normal 100% 'GillSans-Medium';
+	color: #000000;
+	overflow-x: hidden;
+	font-size: 16px;
 }
 
-h1 {
-  color:white; 
-  text-transform:uppercase; 
-  font-size:130px; 
-  margin: 50px; 
-  font-family:Verdana, Geneva, sans-serif;
+body.open {
+	/*overflow: hidden;*/
 }
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+
+/* Nav Bar */
+
+header {
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	top: 0;
+}
+
+nav {
+	margin:auto;
+	width: calc(100% - 180px);
+	max-width: 1440px;
+	background-color: white; 
+	margin-top: 32px;
+}
+
+nav>ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+}
+nav>ul li {
+	flex-align: row;
+	font-size: 14px;
+	text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav a {
+	color: #000000;
+}
+nav a:hover {
+	color: #80FFA6; 
+}
+nav span {
+	display: flex;
+}
+nav span li {
+	margin-left: 24px;
+}
+/* End Nav Bar */
+
+section {
+	width: calc(100% - 180px);
+	max-width: 1440px;
+	padding: 60px 0;
+    margin: 0 auto;
+}
+.hero {
+    height: calc(100vh - 80px);
+    max-height: 900px;
+    margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	padding: 0;
+}
+.welcome{
+	align-self: center;
+	position: absolute;
+}
+h1 {
+	font-size: 72px;
+	font-family: 'Bodoni-Book';
+	max-width: 720px;
+	padding: 12px 0;
+}
+h1 span{
+	font-family: 'Bodoni-Bold';
+	position: relative;
+}
+h1 span:before {
+	content: "";
+    z-index: -1;
+    background-color: #80FFA6;
+    position: absolute;
+    width: 102%;
+    height: 20px;
+    bottom: -2px;
+    left: -3px;
+    height: 28px;
+}
+
+h2 {
+	font: normal 100% 'GillSans-Light';
+	font-size: 28px;
+}
+h2 span {
+	color: #80FFA6; 
+	font: normal 100% 'GillSans-Bold';
+}
+h3 {
+	font: normal 100% 'GillSans-Light';
+	letter-spacing: 3px;
+	margin-top: 4px;
+}
+
+.scroll {
+	align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* Work */
+
+h2 strong {
+	font: normal 100% 'GillSans-Bold';
+}
+
+.study {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0;
+}
+
+.study-arrow {
+	height: 25px;
+	width: 15px;
+	background: url('../img/arrow-right.png') center center no-repeat;
+}
+
+.study-information {
+	padding: 0 60px 0 20px;
+	width: 35%;
+}
+.study-information h2{
+	font-size: 32px;
+}
+.study-information ul {
+	font-size: 16px;
+	font: normal 100% 'GillSans-Light';
+	display: flex;
+	flex-direction: row;
+	margin-left: -5px;
+}
+.study-information li {
+	border-radius: 24px;
+    padding: 12px 16px 9px;
+    background-color: #E6FFED;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.study-information p {
+	font-size: 20px;
+	font-family: 'GillSans-Light';
+	margin: 40px 0;
+	letter-spacing: 0.5px;
+}
+
+.study-information button {
+	border: 1px solid #80FFA6;
+	border-radius: 24px;
+	padding: 16px 32px 14px;
+	color: #80FFA6;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 2px;
+    display: inline-block;
+    background-color: white;
+}
+.study-information button:hover {
+	background-color: #76E597;
+	border-color: #76E597 ;
+	color: #ffffff;
+	transition: all .3s linear;
+}
+
+
+.study-img {
+	padding: 0 40px;
+	width: 55%;
+	padding: 0 12px;
+	background: red;
+}
+
+
+
+
+
+.behance a {
+	color: #000000;
+	border-bottom: 2px solid #80FFA6;
+}
+
+
+
+
+/* About me */
+
+.aboutme-information h2 {
+	font-family: 'Bodoni-Book';
+	font-size: 60px;
+}
+
+.aboutme-information h2 span {
+	font-family: 'Bodoni-Bold';
+	color: #000000;
+}
+
+
+
+
+.single-case {
+	display: none;
+	background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+.single-case.show {
+	display: block;
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.close-case {
+	height: 32px;
+	width: 32px;
+	background: url('../img/close.png') center center no-repeat;
+}
+
+.single-case p {
+	font-size: 16px;
+	line-height: 22px;
+	font-family: 'GillSans-Light';
+}
+
+.single-case h2 {
+	font-size: 60px;
+	font-family: 'Bodoni-Book';
+	padding: 12px 0;
+}
+
+.single-case h4{
+	font-size: 24px;
+	font-family: 'GillSans-Light'; 
+	margin-bottom: 12px;
+}
+.single-case h4 span{
+	font-family: 'GillSans-Bold';
+}
+
+
+.case-hero {
+	display: flex;
+    align-items: center;
+    height: calc(90vh - 200px);
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.case-img {
+	width: 55%;
+}
+.case-img img{
+    width: 100%;
+}
+.case-detail {
+	width: calc(45% - 120px);
+    max-width: 500px;
+}
+.case-detail ul {
+	font: normal 100% 'GillSans-Light';
+}
+
+.case-two-columns {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.case-two-columns img {
+	width: 100%;
+}
+.case-two-columns .right {
+	width: 50%;
+	max-width: 450px;
+}
+.case-two-columns .left {
+	width: 50%;
+}
+
+
+/* Deco Shapes */
+.shapes {
+	width: 100%;
+}
+.formita {
+	position: relative;
+	z-index: 1;	
+}
+div[id^="cuad"]{
+	width: 15px;
+	height: 15px;
+	background-color: #000000;
+}
+#cuad_tres{top: 75%;left: 90%;} #cuad_cuatro{top: 20%;left: 65%;}
+
+div[id^="cua_borde"]{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #000000;
+}
+#cua_borde_dos{top: 10%;left: 35%;}
+	
+div[id^="cir_borde"]{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #000000;
+	border-radius: 10px;
+}
+#cir_borde_dos{top: 75%; left: 20%;} #cir_borde_tres{top: 60%;left: 80%;}
+	
+div[id^="linea"]{
+	width: 20px;
+	height: 3px;
+	background-color: #000000;
+}
+
+#linea_dos{top: 15%;left: 0;} #linea_cuatro{top: 25%; left: 70%;}
+
+.close-btn, .dropdown-btn { display: none; }
+
+
+
+
+@media only screen and (max-width: 768px) {
+	nav, 
+	section {
+		width: calc(100% - 80px);
+	}
+	.menu-dropdown {
+		display: none;
+		width: 100%;
+	    background: rgba(0, 0, 0, 0.85);
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    height: 100vh;
+	    text-align: center;
+   	 	padding-top: 120px;
+    	line-height: 3;
+	}
+	.menu-dropdown.show {
+		display: inline-block;
+		transition: all .3s linear;
+	}
+
+	.welcome {
+		padding-right: 40px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h1 span:before {
+    	height: 20px;
+    	bottom: -4px;
+	}
+	.dropdown-btn {
+		height: 32px;
+		width: 32px;
+		background: url('../img/hamburguer.png') center center no-repeat;
+		border: none;
+		padding: 0;
+		margin-top: -7px;
+	}
+	.close-btn {
+		height: 32px;
+		width: 32px;
+		background: url('../img/close.png') center center no-repeat;
+		padding: 0;
+		right: 40px;
+    	top: 40px;
+    	position: absolute;
+	}
+
+	.menu-dropdown .menu-link a{
+		font-size: 24px;
+		color: #ffffff; 
+		letter-spacing: 5px;
+	} 
+
+
+	.study {
+		flex-wrap: wrap;
+	}
+	.study-information, 
+	.study-img {
+		width: 100%;
+	}
+	.study-information {
+		padding: 0 0 0 40px;
+	}
+
+	.study-arrow {
+		position: absolute;
+	}
+
+
+	.case-hero {
+	    flex-direction: column;
+	    height: auto;
+	}
+	.case-img {
+		width: 100%;
+		margin-top: 40px;
+	}
+	.case-detail {
+		width: 100%;
+	}
+	.single-case h2 {
+		font-size: 44px;
+		margin-top: 40px;
+	}
+	.case-two-columns {
+		flex-direction: column;
+		margin-top: 40px;
+	}
+	.case-two-columns  .right,
+	.case-two-columns  .left{
+		width: 100%;
+	}
+	.case-two-columns img {
+		margin: 40px 0;
+	}
+}
+
+
+
+
+
