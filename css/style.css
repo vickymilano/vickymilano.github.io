@@ -292,6 +292,7 @@ h2.title {
 	font-family: 'Bodoni-Book';
 	max-width: 720px;
 	padding: 12px 0;
+	width: 50%;
 }
 h2.title span{
 	font-family: 'Bodoni-Bold';
@@ -310,6 +311,18 @@ h2.title span:before {
     height: 28px;
 }
 
+.contact {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+.contact a {
+	margin: 0 20px;
+}
+.contact a:hover {
+	opacity: 0.6;
+}
 
 footer p {
 	font: normal 100% 'GillSans-Light';
@@ -556,11 +569,20 @@ div[id^="linea"]{
 		margin-top: 0px;
 	}
 
-
-
-
-
-
+	.contact {
+		flex-direction: column;
+	}
+	.contact .title {
+		width: 100%;
+	}
+	.contact .social {
+		margin-top: 20px;
+	    text-align: left;
+	    width: 100%;
+	}
+	.contact a {
+		margin: 0 5px;
+	}
 
 
 	.case-hero {
