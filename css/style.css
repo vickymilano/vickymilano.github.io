@@ -135,12 +135,12 @@ h2 strong {
 .study {
 	display: flex;
 	justify-content: space-between;
-	margin: 40px 0;
+	margin: 80px 0;
 }
 
 .study-arrow {
 	height: 25px;
-	width: 200px;
+	width: 100px;
     background: url(../img/arrow-right.png) center left no-repeat;
 }
 
@@ -282,6 +282,45 @@ h2 strong {
 }
 .aboutme button {
 	margin-top: 20px;
+}
+
+
+
+
+h2.title {
+	font-size: 72px;
+	font-family: 'Bodoni-Book';
+	max-width: 720px;
+	padding: 12px 0;
+}
+h2.title span{
+	font-family: 'Bodoni-Bold';
+	position: relative;
+	color: #000000;
+}
+h2.title span:before {
+	content: "";
+    z-index: -1;
+    background-color: #80FFA6;
+    position: absolute;
+    width: 102%;
+    height: 20px;
+    bottom: -2px;
+    left: -3px;
+    height: 28px;
+}
+
+
+footer p {
+	font: normal 100% 'GillSans-Light';
+    letter-spacing: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+footer img {
+	margin: 0 5px;
 }
 
 
