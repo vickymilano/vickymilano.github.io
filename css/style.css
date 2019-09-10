@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #ffffff;
 	font-family: ´'GillSans-Medium'; /*-------LLAMAR CSS FUENTES----------*/
@@ -190,7 +194,7 @@ h2 strong {
     background-color: white;
 }
 .study-information button:hover,
-.aboutme-information:hover button {
+.aboutme-information button:hover {
 	background-color: #000000;
 	border-color: #000000 ;
 	color: #ffffff;
@@ -363,17 +367,30 @@ footer img {
 }
 
 .single-case p {
-	font-size: 16px;
-	line-height: 22px;
-	font-family: 'GillSans-Light';
+	font-size: 18px;
+    line-height: 22px;
+    font-family: 'GillSans-Light';
+    margin-top: 10px;
+}
+.single-case p.role {
+	font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
 }
 
 .single-case h2 {
-	font-size: 60px;
+	font-size: 44px;
 	font-family: 'Bodoni-Book';
 	padding: 12px 0;
 }
 
+.single-case .case-hero h4{
+	text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'GillSans-Bold';
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
 .single-case h4{
 	font-size: 24px;
 	font-family: 'GillSans-Light'; 
@@ -383,6 +400,10 @@ footer img {
 	font-family: 'GillSans-Bold';
 }
 
+.single-case .study-arrow {
+	display: inline-block;
+    width: 50px;
+}
 
 .case-hero {
 	display: flex;
@@ -393,9 +414,14 @@ footer img {
 }
 .case-img {
 	width: 55%;
+    position: absolute;
+    right: 0;
+    top: 80px;
 }
 .case-img img{
-    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    right: 0;
 }
 .case-detail {
 	width: calc(45% - 120px);
@@ -421,6 +447,29 @@ footer img {
 	width: 50%;
 }
 
+.card-row {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.card {
+	background-color: #ffffff;
+	-webkit-box-shadow: 4px 4px 30px 0px rgba(45,41,56,0.15);
+	-moz-box-shadow: 4px 4px 30px 0px rgba(45,41,56,0.15);
+	box-shadow: 4px 4px 30px 0px rgba(45,41,56,0.15);
+	width: 180px;
+    border-radius: 16px;
+    padding: 20px;
+    margin-right: 20px;
+    height: 220px;
+}
+
+#admin-research {
+    margin-top: 40px;
+    background: url('../img/admin-research.jpg') right center no-repeat;
+    height: 500px;
+}
 
 /* Deco Shapes */
 .shapes {
