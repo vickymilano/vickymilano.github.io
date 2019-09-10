@@ -129,7 +129,7 @@ h3 {
 /* Work */
 
 h2 strong {
-	font: normal 100% 'GillSans-Bold';
+	font-family: 'GillSans-Bold';
 }
 
 .study {
@@ -140,20 +140,23 @@ h2 strong {
 
 .study-arrow {
 	height: 25px;
-	width: 15px;
-	background: url('../img/arrow-right.png') center center no-repeat;
+	width: 200px;
+    background: url(../img/arrow-right.png) center left no-repeat;
 }
 
 .study-information {
-	padding: 0 60px 0 20px;
+	padding: 0 60px 0 0;
 	width: 35%;
+	align-self: center;
+	display: flex;
+	justify-content: space-between;
 }
 .study-information h2{
 	font-size: 32px;
 }
 .study-information ul {
 	font-size: 16px;
-	font: normal 100% 'GillSans-Light';
+	font-family: 'GillSans-Light';
 	display: flex;
 	flex-direction: row;
 	margin-left: -5px;
@@ -175,10 +178,10 @@ h2 strong {
 }
 
 .study-information button {
-	border: 1px solid #80FFA6;
+	border: 1px solid #000000;
 	border-radius: 24px;
 	padding: 16px 32px 14px;
-	color: #80FFA6;
+	color: #000000;
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 2px;
@@ -197,18 +200,37 @@ h2 strong {
 	padding: 0 40px;
 	width: 55%;
 	padding: 0 12px;
-	background: red;
+}
+.study-img img{
+	width: 100%;
 }
 
 
 
 
-
+.behance {
+	padding: 90px;
+    background: #E6FFED;
+    margin-top: -40px;
+}
+.behance h2 {
+	margin-bottom: 10px;
+}
+.behance p{
+	font-family: 'GillSans-Light';
+}
 .behance a {
 	color: #000000;
-	border-bottom: 2px solid #80FFA6;
+    border-bottom: 2px solid #80FFA6;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-
+.behance a:hover {
+	opacity: 0.6;
+}
 
 
 
@@ -392,6 +414,7 @@ div[id^="linea"]{
 		border: none;
 		padding: 0;
 		margin-top: -7px;
+		display: block;
 	}
 	.close-btn {
 		height: 32px;
@@ -401,6 +424,7 @@ div[id^="linea"]{
 		right: 40px;
     	top: 40px;
     	position: absolute;
+    	display: block;
 	}
 
 	.menu-dropdown .menu-link a{
@@ -410,6 +434,10 @@ div[id^="linea"]{
 	} 
 
 
+
+
+
+
 	.study {
 		flex-wrap: wrap;
 	}
@@ -417,13 +445,32 @@ div[id^="linea"]{
 	.study-img {
 		width: 100%;
 	}
-	.study-information {
-		padding: 0 0 0 40px;
+	.study-arrow {
+		width: 100px;
 	}
 
-	.study-arrow {
-		position: absolute;
+	.study-information p{
+		margin: 20px 0;
 	}
+
+	.study-img {
+		margin-top: 20px;
+	}
+
+
+
+
+	.behance {
+		padding: 40px;
+	}
+
+
+
+
+
+
+
+
 
 
 	.case-hero {
@@ -454,7 +501,11 @@ div[id^="linea"]{
 	}
 }
 
-
+@media only screen and (max-width: 359px) {
+	nav, section {
+	    width: calc(100% - 40px);
+	}
+}
 
 
 

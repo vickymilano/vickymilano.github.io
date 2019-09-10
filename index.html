@@ -18,8 +18,16 @@
 				document.body.classList.toggle("open");
 			}
 
-			function caseDisplay() {
+			function caseDisplayAdmin() {
 				document.getElementById("case-admin").classList.toggle("show");
+				document.body.classList.toggle("open");
+			}
+			function caseDisplayKeyboard() {
+				document.getElementById("case-keyboard").classList.toggle("show");
+				document.body.classList.toggle("open");
+			}
+			function caseDisplayIos() {
+				document.getElementById("case-ios").classList.toggle("show");
 				document.body.classList.toggle("open");
 			}
 
@@ -91,30 +99,73 @@
 		<h3>[Work]</h3>
 
 		<div class="study">
-			<div class="study-arrow">
-			</div>
 			<div class="study-information">
-				<h2>Admin <strong>Nube</strong></h2>
-				<ul>
-					<li>Information Architecture</li>
-					<li>UX</li>
-					<li>UI</li>
-				</ul>
-				<p>A redesign of Tiendanube/Nuvemshop administrator, understanding carefully the needs of its users and how to create a better experience for a product that they use every day.</p>
-				<button onclick="caseDisplay()" href="#">See more</a>
+				<div class="study-arrow">
+				</div>
+				<div>
+					<h2>Admin <strong>Nube</strong></h2>
+					<ul>
+						<li>Information Architecture</li>
+						<li>UX</li>
+						<li>UI</li>
+					</ul>
+					<p>Redesign of Tiendanube administrator, creating a better experience for over 30000 users.</p>
+					<button onclick="caseDisplayAdmin()" href="#">See more</a>
+				</div>
 			</div>
 			<div class="study-img">
-
+				<img src="img/admin-home.png" />
 			</div>
 		</div>
 
+		<div class="study">
+			<div class="study-information">
+				<div class="study-arrow">
+				</div>
+				<div>
+					<h2>Teclado <strong>Nube</strong></h2>
+					<ul>
+						<li>Product</li>
+						<li>UX</li>
+						<li>UI</li>
+					</ul>
+					<p>Idealising and creating a new product, a keyboard for users to connect to their store and use on their phones.</p>
+					<button onclick="caseDisplayKeyboard()" href="#">See more</a>
+				</div>
+			</div>
+			<div class="study-img">
+				<img src="img/teclado-home.png" />
+			</div>
+		</div>
+
+
+		<div class="study">
+			<div class="study-information">
+				<div class="study-arrow">
+				</div>
+				<div>
+					<h2>iOS <strong>App</strong></h2>
+					<ul>
+						<li>UX</li>
+						<li>UI</li>
+					</ul>
+					<p>Optimizing and changing the look and feel of the iOS application for Nuvemshop.</p>
+					<button onclick="caseDisplayIos()" href="#">See more</a>
+				</div>
+			</div>
+			<div class="study-img">
+				<img src="img/ios-home.png" />
+			</div>
+		</div>
+
+	</section>
+	<!-- FIN WORK -->
 
 		<div class="behance">
 			<h2>Not just <strong>a one-trick designer</strong></h2>
-			<p>Checkout <a href="https://www.behance.net/vickymilano?tracking_source=search-all%7Cvicky%20milano">my behance</a> for other cool stuff.</p>
+			<p>Have a look at my behance for other cool stuff.</p>
+			<a href="https://www.behance.net/vickymilano?tracking_source=search-all%7Cvicky%20milano" target="_blank">Visit my behance</a>
 		</div>
-	</section>
-	<!-- FIN WORK -->
 
 	<!-- ME -->
 	<section id="aboutme">
