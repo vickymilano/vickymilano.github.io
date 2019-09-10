@@ -177,7 +177,8 @@ h2 strong {
 	letter-spacing: 0.5px;
 }
 
-.study-information button {
+.study-information button,
+.aboutme-information button {
 	border: 1px solid #000000;
 	border-radius: 24px;
 	padding: 16px 32px 14px;
@@ -188,9 +189,10 @@ h2 strong {
     display: inline-block;
     background-color: white;
 }
-.study-information button:hover {
-	background-color: #76E597;
-	border-color: #76E597 ;
+.study-information button:hover,
+.aboutme-information:hover button {
+	background-color: #000000;
+	border-color: #000000 ;
 	color: #ffffff;
 	transition: all .3s linear;
 }
@@ -234,16 +236,52 @@ h2 strong {
 
 
 
-/* About me */
 
+
+
+/* About me */
+.aboutme {
+	display: flex;
+	justify-content: space-around;
+}
+.aboutme-information {
+	width: 50%;
+}
+.aboutme-img {
+	width: 25%;
+	min-width: 230px;
+}
+.aboutme-img img{
+	width: 100%;
+}
+.aboutme-img p{
+	width: 100%;
+	font-family: 'GillSans-Light';
+	font-size: 36px;
+	display: inline-block;
+	margin-top: 10px;
+	text-align: right;
+}
 .aboutme-information h2 {
 	font-family: 'Bodoni-Book';
-	font-size: 60px;
+	font-size: 60px; 
+	margin: 40px 0;
 }
 
 .aboutme-information h2 span {
 	font-family: 'Bodoni-Bold';
 	color: #000000;
+}
+.aboutme-information p:first-of-type {
+	font-size: 24px;
+}
+.aboutme-information p {
+	margin-bottom: 20px;
+	font-family: 'GillSans-Light';
+	max-width: 450px;
+}
+.aboutme button {
+	margin-top: 20px;
 }
 
 
@@ -312,7 +350,7 @@ h2 strong {
     max-width: 500px;
 }
 .case-detail ul {
-	font: normal 100% 'GillSans-Light';
+	font-family: 'GillSans-Light';
 }
 
 .case-two-columns {
@@ -464,7 +502,20 @@ div[id^="linea"]{
 		padding: 40px;
 	}
 
-
+	.aboutme {
+		flex-direction: column-reverse;
+		margin-top: 40px;
+	}
+	.aboutme-information {
+		width: 100%;
+	}
+	.aboutme-img p {
+		text-align: left;
+		font-size: 24px;
+	}
+	.aboutme button {
+		margin-top: 0px;
+	}
 
 
 
