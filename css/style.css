@@ -342,7 +342,9 @@ footer img {
 
 
 
-
+.single-case .background {
+	width: 100%;
+}
 .single-case {
 	display: none;
 	background: #fff;
@@ -395,6 +397,7 @@ footer img {
 	font-size: 24px;
 	font-family: 'GillSans-Light'; 
 	margin-bottom: 12px;
+	letter-spacing: 1px;
 }
 .single-case h4 span{
 	font-family: 'GillSans-Bold';
@@ -408,9 +411,9 @@ footer img {
 .case-hero {
 	display: flex;
     align-items: center;
-    height: calc(90vh - 200px);
     margin-top: 80px;
     justify-content: space-between;
+    height: calc(100vh - 80px);
 }
 .case-img {
 	width: 55%;
@@ -419,7 +422,7 @@ footer img {
     top: 80px;
 }
 .case-img img{
-    height: calc(100vh - 80px);
+    height: calc(100vh - 60px);
     position: absolute;
     right: 0;
 }
@@ -440,11 +443,11 @@ footer img {
 	width: 100%;
 }
 .case-two-columns .right {
-	width: 50%;
-	max-width: 450px;
+	width: 60%;
+	margin-right: -80px;
 }
 .case-two-columns .left {
-	width: 50%;
+	width: 30%;
 }
 
 .card-row {
@@ -458,18 +461,70 @@ footer img {
 	-webkit-box-shadow: 4px 4px 30px 0px rgba(45,41,56,0.15);
 	-moz-box-shadow: 4px 4px 30px 0px rgba(45,41,56,0.15);
 	box-shadow: 4px 4px 30px 0px rgba(45,41,56,0.15);
-	width: 180px;
+	width: 200px;
     border-radius: 16px;
-    padding: 20px;
+    padding: 8px 20px 20px 20px;
     margin-right: 20px;
     height: 220px;
+    z-index: 0;
+}
+.card h4 {
+	font-size: 18px;
+    font-family: 'GillSans-Bold';
+    margin-top: 43px;
+    margin-bottom: 30px;
+}
+.card span {
+	font-size: 74px;
+    font-family: 'Bodoni-Bold';
+    color: #F3F2F3;
+    position: absolute;
+    z-index: -1;
+}
+.card p {
+	font-size: 16px;
+	font-family: 'GillSans-Light';
 }
 
 #admin-research {
     margin-top: 40px;
-    background: url('../img/admin-research.jpg') right center no-repeat;
+    background: url('../img/admin-research.png') right center no-repeat;
     height: 500px;
+    padding: 60px;
 }
+
+.prototype-description,
+.testing-description {
+	width: 50%;
+	margin-top: 80px;
+}
+.prototype-info img {
+	margin-left: -80px;
+	width: calc(100% + 160px);
+}
+
+.testing-description {
+	margin-bottom: 40px;
+}
+.testing-info {
+	margin-top: 80px;
+}
+.testing-info img {
+	width: 100%;
+}
+.case-description .card-row {
+	margin: 80px 0;
+}
+
+
+.finalimages img {
+	width: 100%;
+}
+
+
+
+
+
 
 /* Deco Shapes */
 .shapes {
@@ -639,11 +694,37 @@ div[id^="linea"]{
 	    height: auto;
 	}
 	.case-img {
-		width: 100%;
-		margin-top: 40px;
+		width: calc(100% + 80px);
+	    order: 1;
+	    position: relative;
+	    margin-top: -30px;
+	    top: 0;
+	    margin-right: -80px;
+	}
+	.case-img img{
+		height: auto;
+    	width: 100%;
+    	position: relative;
 	}
 	.case-detail {
 		width: 100%;
+		order: 2;
+	}
+	#admin-research {
+		background: none;
+		margin-top: 0px;
+    	padding-right: 20px;
+    	padding-top: 0px;
+    	height: auto;
+    	padding-bottom: 0px;
+	}
+	.card-row {
+		flex-direction: column;
+	}
+	.card {
+		width: 100%;
+    	margin-bottom: 40px;
+    	padding: 16px 40px 40px;
 	}
 	.single-case h2 {
 		font-size: 44px;
@@ -657,8 +738,33 @@ div[id^="linea"]{
 	.case-two-columns  .left{
 		width: 100%;
 	}
+	.case-two-columns .right {
+		margin-right: 0px;
+		width: calc(100% + 80px);
+	}
 	.case-two-columns img {
 		margin: 40px 0;
+	}
+
+	.prototype-description, 
+	.testing-description {
+		width: 100%;
+	}
+	.prototype-info img {
+	 	margin-left: -200px;
+    	width: calc(100% + 400px);
+    	margin-top: 40px;
+    }
+    #admin-desktop {
+    	margin-left: -20%;
+    	width: 150%;
+    }
+
+    .case-implement .card-row {
+        padding: 0 40px;
+    }
+    .testing-info img {
+   		width: 150%;
 	}
 }
 

@@ -24,12 +24,12 @@
 
 @font-face {
   font-family: 'GillSans-Bold';
-  src: url('GillSansMTPro-Bold.eot');
-  src: url('GillSansMTPro-Bold.woff2') format('woff2'),
-       url('GillSansMTPro-Bold.woff') format('woff'),
-       url('GillSansMTPro-Bold.ttf') format('truetype'),
-       url('GillSansMTPro-Bold.svg#GillSansMTPro-Bold') format('svg'),
-       url('GillSansMTPro-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('GillSans-SemiBold.eot');
+  src: url('GillSans-SemiBold.woff2') format('woff2'),
+       url('GillSans-SemiBold.woff') format('woff'),
+       url('GillSans-SemiBold.ttf') format('truetype'),
+       url('GillSans-SemiBold.svg#GillSans-SemiBold') format('svg'),
+       url('GillSans-SemiBold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
