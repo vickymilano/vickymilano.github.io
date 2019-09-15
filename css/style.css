@@ -219,6 +219,10 @@ h2 strong {
     background: #E6FFED;
     margin-top: -40px;
 }
+.behance div {
+	max-width: 1440px;
+	margin: auto;
+}
 .behance h2 {
 	margin-bottom: 10px;
 }
