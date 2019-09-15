@@ -16,7 +16,8 @@ body.open {
 	/*overflow: hidden;*/
 }
 
-button {
+button,
+.button {
 	cursor: pointer;
 	border: none;
 }
@@ -182,7 +183,7 @@ h2 strong {
 }
 
 .study-information button,
-.aboutme-information button {
+.aboutme-information .button {
 	border: 1px solid #000000;
 	border-radius: 24px;
 	padding: 16px 32px 14px;
@@ -194,7 +195,7 @@ h2 strong {
     background-color: white;
 }
 .study-information button:hover,
-.aboutme-information button:hover {
+.aboutme-information .button:hover {
 	background-color: #000000;
 	border-color: #000000 ;
 	color: #ffffff;
@@ -288,7 +289,7 @@ h2 strong {
 	font-family: 'GillSans-Light';
 	max-width: 450px;
 }
-.aboutme button {
+.aboutme .button {
 	margin-top: 20px;
 }
 
@@ -639,12 +640,20 @@ div[id^="linea"]{
 	.study {
 		flex-wrap: wrap;
 	}
+	.study-information {
+		padding: 0px;
+	}
 	.study-information, 
 	.study-img {
 		width: 100%;
 	}
+	.study-img img {
+		width: calc(100% + 80px);
+    	margin-left: -40px;
+    	margin-top: 20px;
+	}
 	.study-arrow {
-		width: 100px;
+		display: none;
 	}
 
 	.study-information p{
@@ -673,7 +682,7 @@ div[id^="linea"]{
 		text-align: left;
 		font-size: 24px;
 	}
-	.aboutme button {
+	.aboutme .button {
 		margin-top: 0px;
 	}
 
@@ -769,6 +778,10 @@ div[id^="linea"]{
     }
     .testing-info img {
    		width: 150%;
+	}
+
+	#cuad_cuatro {
+		top: 10%;
 	}
 }
 
