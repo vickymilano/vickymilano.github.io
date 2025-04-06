@@ -1,5 +1,7 @@
 import smartInterviews from './assets/images/smart-interviews.png'
+import fingerprintProject from './assets/images/fingerprint-project.png'
 import pixelSparks from './assets/images/pixel-sparks.png'
+import pixelFingerprint from './assets/images/pixel-fingerprint.png'
 
 import { Page, Section, Project } from './components'
 
@@ -45,13 +47,28 @@ function App() {
             alt: 'Pixel sparks',
             className: 'absolute top-0 right-0 -translate-y-1/2',
           },
+        ]}
+      />
+      <Project
+        number='02'
+        title='Biometric Identification in Prisons'
+        subtitle='A web app to help identify and register people in prison using fingerprint data to match with the national database.'
+        link='#'
+        background='blue'
+        mainImage={{
+          src: fingerprintProject,
+          alt: 'Fingerprint Project',
+        }}
+        decorations={[
           {
-            src: pixelSparks,
-            alt: 'Pixel sparks',
+            src: pixelFingerprint,
+            alt: 'Pixel fingerprint',
             className:
-              'absolute bottom-0 left-0 scale-[57%] translate-y-[124px]',
+              'absolute bottom-0 right-0 translate-x-1/4 translate-y-1/2',
           },
         ]}
+        className='pt-[130px] pb-[90px]'
+        imageClassName='mr-[140px]'
       />
     </Page>
   )

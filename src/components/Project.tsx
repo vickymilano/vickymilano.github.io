@@ -18,6 +18,8 @@ interface Props {
   decorations?: Decoration[]
   background?: BackgroundColor
   number?: string
+  className?: string
+  imageClassName?: string
 }
 
 const Project: React.FC<Props> = ({
@@ -28,11 +30,13 @@ const Project: React.FC<Props> = ({
   decorations = [],
   background = 'white',
   number = '01',
+  className = '',
+  imageClassName = '',
 }) => {
   return (
-    <Section background={background}>
-      <article className={`flex justify-between py-[140px]`}>
-        <div className='flex flex-col max-w-[430px]'>
+    <Section background={background} className='overflow-y-hidden'>
+      <article className={`flex justify-between py-[140px] ${className}`}>
+        <div className='flex flex-col max-w-[430px] flex-1'>
           <p className='text-small'>{number}.</p>
           <h2 className='text-xlarge font-medium mt-[60px]'>{title}</h2>
           <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
@@ -44,7 +48,7 @@ const Project: React.FC<Props> = ({
           <img
             src={mainImage.src}
             alt={mainImage.alt}
-            className='relative z-10'
+            className={`relative z-10 ${imageClassName}`}
           />
           {decorations.map((decoration, index) => (
             <img
