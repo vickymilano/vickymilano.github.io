@@ -1,5 +1,5 @@
 import { BackgroundColor } from '../types/colors'
-import { getBackgroundClass } from '../utils/colors'
+import Section from './Section'
 
 interface Decoration {
   src: string
@@ -30,35 +30,33 @@ const Project: React.FC<Props> = ({
   number = '01',
 }) => {
   return (
-    <article
-      className={`flex justify-between py-[140px] ${getBackgroundClass(
-        background
-      )}`}
-    >
-      <div className='flex flex-col max-w-[430px]'>
-        <p className='text-small'>{number}.</p>
-        <h2 className='text-xlarge mt-[60px]'>{title}</h2>
-        <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
-        <a href={link} className='text-xsmall mt-[40px]'>
-          See more →
-        </a>
-      </div>
-      <div className='relative'>
-        <img
-          src={mainImage.src}
-          alt={mainImage.alt}
-          className='relative z-10'
-        />
-        {decorations.map((decoration, index) => (
+    <Section background={background}>
+      <article className={`flex justify-between py-[140px]`}>
+        <div className='flex flex-col max-w-[430px]'>
+          <p className='text-small'>{number}.</p>
+          <h2 className='text-xlarge font-medium mt-[60px]'>{title}</h2>
+          <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
+          <a href={link} className='text-xsmall mt-[40px]'>
+            See more →
+          </a>
+        </div>
+        <div className='relative'>
           <img
-            key={index}
-            src={decoration.src}
-            alt={decoration.alt}
-            className={decoration.className}
+            src={mainImage.src}
+            alt={mainImage.alt}
+            className='relative z-10'
           />
-        ))}
-      </div>
-    </article>
+          {decorations.map((decoration, index) => (
+            <img
+              key={index}
+              src={decoration.src}
+              alt={decoration.alt}
+              className={decoration.className}
+            />
+          ))}
+        </div>
+      </article>
+    </Section>
   )
 }
 

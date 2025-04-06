@@ -29,32 +29,30 @@ function App() {
           <p className='mt-[24px] text-medium'>[One smart pixel at a time]</p>
         </div>
       </Section>
-      <Section>
-        <Project
-          number='01'
-          title='Smart interviews'
-          subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
-          background='purple-light'
-          link='#'
-          mainImage={{
-            src: smartInterviews,
-            alt: 'Smart interviews',
-          }}
-          decorations={[
-            {
-              src: pixelSparks,
-              alt: 'Pixel sparks',
-              className: 'absolute top-0 right-0 -translate-y-1/2',
-            },
-            {
-              src: pixelSparks,
-              alt: 'Pixel sparks',
-              className:
-                'absolute bottom-0 left-0 scale-[57%] translate-y-[124px]',
-            },
-          ]}
-        />
-      </Section>
+      <Project
+        number='01'
+        title='Smart interviews'
+        subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
+        background='purple-light'
+        link='#'
+        mainImage={{
+          src: smartInterviews,
+          alt: 'Smart interviews',
+        }}
+        decorations={[
+          {
+            src: pixelSparks,
+            alt: 'Pixel sparks',
+            className: 'absolute top-0 right-0 -translate-y-1/2',
+          },
+          {
+            src: pixelSparks,
+            alt: 'Pixel sparks',
+            className:
+              'absolute bottom-0 left-0 scale-[57%] translate-y-[124px]',
+          },
+        ]}
+      />
     </Page>
   )
 }
