@@ -22,9 +22,9 @@ function App() {
             <span className='text-medium text-purple'>Hi!</span> I'm Vicky
             Milano
           </h1>
-          <p className='mt-[48px] text-xxlarge'>
+          <p className='mt-[48px] text-xxlarge max-w-[910px]'>
             I design digital products that solve real problems
-            <span className='text-purple'>.</span>
+            <span className='text-purple font-mono text-[50px]'>.</span>
           </p>
           <p className='mt-[24px] text-medium'>[One smart pixel at a time]</p>
         </div>
