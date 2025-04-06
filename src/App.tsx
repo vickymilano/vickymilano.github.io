@@ -5,12 +5,14 @@ import pixelFingerprint from './assets/images/pixel-fingerprint.png'
 import tiendanube from './assets/images/tiendanube.png'
 import cv from './assets/files/cv.pdf'
 
+import arrow from './assets/icons/arrow-down.svg'
+
 import { Page, Section, Project } from './components'
 
 function App() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
-      <Section className='pb-[72px]'>
+      <Section className='pb-[74px]'>
         <div className='flex justify-between items-center h-[84px] font-medium'>
           <div>
             <a href='#'>VICKY MILANO</a>
@@ -33,6 +35,9 @@ function App() {
             <span className='text-purple font-mono text-[50px]'>.</span>
           </p>
           <p className='mt-[24px] text-medium'>[One smart pixel at a time]</p>
+        </div>
+        <div className='mt-[165px] flex justify-center'>
+          <img src={arrow} alt='Arrow down' />
         </div>
       </Section>
       <Project
