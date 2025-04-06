@@ -76,8 +76,8 @@ function App() {
               'absolute bottom-0 right-0 translate-x-1/4 translate-y-1/2',
           },
         ]}
-        className='pt-[130px] pb-[90px]'
-        imageClassName='mr-[140px]'
+        className='lg:pt-[130px] lg:pb-[90px]'
+        imageClassName='lg:mr-[140px]'
       />
       <Project
         number='03'
@@ -89,6 +89,7 @@ function App() {
           src: tiendanube,
           alt: 'Tiendanube Admin',
         }}
+        imageClassName='lg:scale-80 xl:scale-100'
       />
       <Section
         background='purple'

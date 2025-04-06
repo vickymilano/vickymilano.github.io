@@ -18,7 +18,9 @@ const Section: React.FC<Props> = ({
 }) => {
   return (
     <Component className={`${getBackgroundClass(background)} ${className}`}>
-      <div className={fluid ? '' : 'max-w-page mx-auto'}>{children}</div>
+      <div className={fluid ? '' : 'max-w-[90%] 2xl:max-w-[1200px] mx-auto'}>
+        {children}
+      </div>
     </Component>
   )
 }

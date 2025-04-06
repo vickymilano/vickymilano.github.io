@@ -35,8 +35,10 @@ const Project: React.FC<Props> = ({
 }) => {
   return (
     <Section background={background} className='overflow-y-hidden'>
-      <article className={`flex justify-between py-[140px] ${className}`}>
-        <div className='flex flex-col max-w-[430px] flex-1'>
+      <article
+        className={`flex flex-col lg:flex-row justify-between py-[70px] lg:py-[140px] ${className}`}
+      >
+        <div className='flex flex-col lg:max-w-[430px] flex-1'>
           <p className='text-small'>{number}.</p>
           <h2 className='text-xlarge font-medium mt-[60px]'>{title}</h2>
           <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
@@ -44,7 +46,7 @@ const Project: React.FC<Props> = ({
             SEE MORE →
           </a>
         </div>
-        <div className='relative'>
+        <div className='relative mt-16 lg:mt-0 flex justify-center'>
           <img
             src={mainImage.src}
             alt={mainImage.alt}
