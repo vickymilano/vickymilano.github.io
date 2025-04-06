@@ -95,8 +95,8 @@ function App() {
         background='purple'
         className='py-[120px]  bg-grid bg-[length:20px_20px]'
       >
-        <article className='flex justify-between items-end text-white'>
-          <div className='flex flex-col gap-16  max-w-[670px]'>
+        <article className='flex flex-col gap-16 2xl:flex-row justify-between 2xl:items-end text-white'>
+          <div className='flex flex-col gap-16 max-w-[670px]'>
             <p className='text-small'>
               I like to design with purpose, not just pretty pixels.
             </p>
