@@ -3,6 +3,7 @@ import fingerprintProject from './assets/images/fingerprint-project.png'
 import pixelSparks from './assets/images/pixel-sparks.png'
 import pixelFingerprint from './assets/images/pixel-fingerprint.png'
 import tiendanube from './assets/images/tiendanube.png'
+import cv from './assets/files/cv.pdf'
 
 import { Page, Section, Project } from './components'
 
@@ -16,7 +17,9 @@ function App() {
           </div>
           <div className='flex gap-16'>
             <a href='#'>WORK</a>
-            <a href='#'>CV</a>
+            <a href={cv} download='Vicky Milano - CV.pdf'>
+              CV
+            </a>
             <a href='#'>LET'S TALK</a>
           </div>
         </div>
