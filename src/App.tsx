@@ -2,6 +2,7 @@ import smartInterviews from './assets/images/smart-interviews.png'
 import fingerprintProject from './assets/images/fingerprint-project.png'
 import pixelSparks from './assets/images/pixel-sparks.png'
 import pixelFingerprint from './assets/images/pixel-fingerprint.png'
+import tiendanube from './assets/images/tiendanube.png'
 
 import { Page, Section, Project } from './components'
 
@@ -69,6 +70,17 @@ function App() {
         ]}
         className='pt-[130px] pb-[90px]'
         imageClassName='mr-[140px]'
+      />
+      <Project
+        number='03'
+        title="Redesigning Tiendanube's Admin"
+        subtitle='Redesign UX and UI of Tiendanube administrator, creating a better experience for over 30000 users.'
+        link='#'
+        background='grey'
+        mainImage={{
+          src: tiendanube,
+          alt: 'Tiendanube Admin',
+        }}
       />
     </Page>
   )

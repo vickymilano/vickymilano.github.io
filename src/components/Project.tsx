@@ -41,7 +41,7 @@ const Project: React.FC<Props> = ({
           <h2 className='text-xlarge font-medium mt-[60px]'>{title}</h2>
           <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
           <a href={link} className='text-xsmall mt-[40px]'>
-            See more →
+            SEE MORE →
           </a>
         </div>
         <div className='relative'>
