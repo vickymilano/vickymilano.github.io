@@ -1,7 +1,7 @@
 import smartInterviews from './assets/images/smart-interviews.png'
 import pixelSparks from './assets/images/pixel-sparks.png'
 
-import { Page, Section } from './components'
+import { Page, Section, Project } from './components'
 
 function App() {
   return (
@@ -29,37 +29,31 @@ function App() {
           <p className='mt-[24px] text-medium'>[One smart pixel at a time]</p>
         </div>
       </Section>
-      <Section background='purple-light'>
-        <article className='flex justify-between py-[140px]'>
-          <div className='flex flex-col max-w-[430px]'>
-            <p className='text-small'>01.</p>
-            <h2 className='text-xlarge mt-[60px]'>Smart interviews</h2>
-            <h3 className='text-medium mt-[12px]'>
-              Designing a new product vertical to analyze candidates interviews
-              using AI.
-            </h3>
-            <a href='#' className='text-xsmall mt-[40px]'>
-              See more →
-            </a>
-          </div>
-          <div className='relative'>
-            <img
-              src={smartInterviews}
-              alt='Smart interviews'
-              className='relative z-10'
-            />
-            <img
-              src={pixelSparks}
-              alt='Pixel sparks'
-              className='absolute top-0 right-0 -translate-y-1/2'
-            />
-            <img
-              src={pixelSparks}
-              alt='Pixel sparks'
-              className='absolute bottom-0 left-0 scale-[57%] translate-y-[124px]'
-            />
-          </div>
-        </article>
+      <Section>
+        <Project
+          number='01'
+          title='Smart interviews'
+          subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
+          background='purple-light'
+          link='#'
+          mainImage={{
+            src: smartInterviews,
+            alt: 'Smart interviews',
+          }}
+          decorations={[
+            {
+              src: pixelSparks,
+              alt: 'Pixel sparks',
+              className: 'absolute top-0 right-0 -translate-y-1/2',
+            },
+            {
+              src: pixelSparks,
+              alt: 'Pixel sparks',
+              className:
+                'absolute bottom-0 left-0 scale-[57%] translate-y-[124px]',
+            },
+          ]}
+        />
       </Section>
     </Page>
   )
