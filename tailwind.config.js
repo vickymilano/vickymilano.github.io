@@ -26,6 +26,13 @@ export default {
           light: '#A3CDF0',
         },
       },
+      backgroundImage: {
+        grid: `linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+           linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px)`,
+      },
+      backgroundSize: {
+        grid: '20px 20px',
+      },
     },
   },
   plugins: [],

@@ -8,8 +8,8 @@ import { Page, Section, Project } from './components'
 
 function App() {
   return (
-    <Page>
-      <Section className='mb-[72px]'>
+    <Page className='divide-y-2 divide-solid divide-black'>
+      <Section className='pb-[72px]'>
         <div className='flex justify-between items-center h-[84px] font-medium'>
           <div>
             <a href='#'>VICKY MILANO</a>
@@ -74,7 +74,7 @@ function App() {
       <Project
         number='03'
         title="Redesigning Tiendanube's Admin"
-        subtitle='Redesign UX and UI of Tiendanube administrator, creating a better experience for over 30000 users.'
+        subtitle='Redesign UX and UI of Tiendanube administrator, creating a better experience for over 30,000 users.'
         link='#'
         background='grey'
         mainImage={{
@@ -82,6 +82,33 @@ function App() {
           alt: 'Tiendanube Admin',
         }}
       />
+      <Section
+        background='purple'
+        className='py-[120px]  bg-grid bg-[length:20px_20px]'
+      >
+        <article className='flex justify-between items-end text-white'>
+          <div className='flex flex-col gap-16  max-w-[670px]'>
+            <p className='text-small'>
+              I like to design with purpose, not just pretty pixels.
+            </p>
+            <h3 className='text-xlarge'>Let’s build something that matters.</h3>
+          </div>
+          <div className='flex flex-col gap-[40px] mr-[90px] text-[24px]'>
+            <a href='mailto:vickymilanog@gmail.com' target='_blank'>
+              vickymilanog@gmail.com ↗
+            </a>
+            <a href='https://www.linkedin.com/in/vicky-milano' target='_blank'>
+              LinkedIn ↗
+            </a>
+          </div>
+        </article>
+      </Section>
+      <Section
+        className='text-center text-small my-[20px] font-medium'
+        as='footer'
+      >
+        [ Done with <span className='text-purple'>&lt;3</span> ]
+      </Section>
     </Page>
   )
 }
