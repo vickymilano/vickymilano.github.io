@@ -73,7 +73,7 @@ function Fingerprint() {
             in the designs.
           </p>
         </div>
-        <div className='flex flex-col lg:flex-row justify-between'>
+        <div className='flex flex-col lg:flex-row justify-between items-start'>
           <Box
             color='blue/10'
             className='mt-[29px]  2xl:w-[387px] px-[23px] pb-[80px]'
@@ -106,6 +106,51 @@ function Fingerprint() {
               </StickyNote>
               <StickyNote size='small' color='blue' className='relative'>
                 Some people have missing fingers and hands.
+              </StickyNote>
+            </div>
+          </Box>
+          <Box
+            color='blue/10'
+            className='mt-[29px] 2xl:w-[387px] px-[23px] pb-[80px]'
+          >
+            <h4 className='text-medium2 font-medium'>The context</h4>
+            <div className='relative flex justify-between mt-[14px]'>
+              <StickyNote size='small' color='blue' className='relative'>
+                The census will be conducted manually
+              </StickyNote>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[23px] right-[22px]'
+              >
+                Operators are not very tech savy.
+              </StickyNote>
+            </div>
+            <div className='relative flex justify-between -top-[13px]'>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[32px] left-[12px]'
+              >
+                Each person sits down in front of a computer operator to go
+                through the fingerprinting and data collection.
+              </StickyNote>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[53px] right-[22px]'
+              >
+                Because they are sitting in front of each other it could be
+                confusing identifying "left" vs. "right" hands.
+              </StickyNote>
+            </div>
+            <div className='relative flex justify-between top-[38px]'>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative left-[12px]'
+              >
+                It is common for facilities to suddenly have light outings.
               </StickyNote>
             </div>
           </Box>
