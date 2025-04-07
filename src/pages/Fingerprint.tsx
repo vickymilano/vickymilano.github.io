@@ -63,6 +63,18 @@ function Fingerprint() {
         </div>
       </Section>
 
+      <Section className='py-[60px] lg:py-[120px]'>
+        <div className='2xl:max-w-[792px] mx-auto'>
+          <h3 className='text-large font-medium mb-[12px]'>Underestanding</h3>
+          <p className='text-medium'>
+            Before starting to design, I talked with people who work (or used to
+            work) in the prison system to better understand the context. This
+            research provided me with relevant information to later on include
+            in the designs.
+          </p>
+        </div>
+      </Section>
+
       <Section
         className='text-center text-small my-[20px] font-medium'
         as='footer'
