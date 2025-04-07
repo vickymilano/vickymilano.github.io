@@ -1,30 +1,21 @@
-import smartInterviews from './assets/images/smart-interviews.png'
-import fingerprintProject from './assets/images/fingerprint-project.png'
-import pixelSparks from './assets/images/pixel-sparks.png'
-import pixelFingerprint from './assets/images/pixel-fingerprint.png'
-import tiendanube from './assets/images/tiendanube.png'
-import cv from './assets/files/cv.pdf'
+import smartInterviews from '../assets/images/smart-interviews.png'
+import fingerprintProject from '../assets/images/fingerprint-project.png'
+import pixelSparks from '../assets/images/pixel-sparks.png'
+import pixelFingerprint from '../assets/images/pixel-fingerprint.png'
+import tiendanube from '../assets/images/tiendanube.png'
+import cv from '../assets/files/cv.pdf'
 
-import arrow from './assets/icons/arrow-down.svg'
+import arrow from '../assets/icons/arrow-down.svg'
 
-import { Page, Section, Project } from './components'
+import { Page, Section, Project } from '../components'
+import { Header } from '../containers'
 
-function App() {
+function Homepage() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <Section className='pb-[74px]'>
-        <div className='flex justify-between items-center h-[84px] font-medium'>
-          <div>
-            <a href='#'>VICKY MILANO</a>
-          </div>
-          <div className='flex gap-16'>
-            <a href='#'>WORK</a>
-            <a href={cv} download='Vicky Milano - CV.pdf'>
-              CV
-            </a>
-            <a href='#'>LET'S TALK</a>
-          </div>
-        </div>
+        <Header />
+
         <div className='flex flex-col mt-[136px] font-medium'>
           <h1>
             <span className='text-medium text-purple'>Hi!</span> I'm Vicky
@@ -62,7 +53,7 @@ function App() {
         number='02'
         title='Biometric Identification in Prisons'
         subtitle='A web app to help identify and register people in prison using fingerprint data to match with the national database.'
-        link='#'
+        link={`${import.meta.env.BASE_URL}fingerprint`}
         background='blue'
         mainImage={{
           src: fingerprintProject,
@@ -122,4 +113,4 @@ function App() {
   )
 }
 
-export default App
+export default Homepage

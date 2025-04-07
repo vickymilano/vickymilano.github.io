@@ -5,3 +5,7 @@
 html {
   @apply font-sans;
 }
+
+ul {
+  @apply pl-0 list-disc;
+}

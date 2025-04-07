@@ -7,6 +7,9 @@ export const getBackgroundClass = (color: BackgroundColor): string => {
     purple: 'bg-purple',
     blue: 'bg-blue-light',
     'purple-light': 'bg-purple-light',
+    'grey/10': 'bg-grey/10',
+    'purple-light/10': 'bg-purple-light/10',
+    'blue/10': 'bg-blue-light/10',
   }
 
   return backgroundClasses[color]
