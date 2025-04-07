@@ -3,7 +3,6 @@ import fingerprintProject from '../assets/images/fingerprint-project.png'
 import pixelSparks from '../assets/images/pixel-sparks.png'
 import pixelFingerprint from '../assets/images/pixel-fingerprint.png'
 import tiendanube from '../assets/images/tiendanube.png'
-import cv from '../assets/files/cv.pdf'
 
 import arrow from '../assets/icons/arrow-down.svg'
 
