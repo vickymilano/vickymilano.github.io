@@ -1,6 +1,6 @@
 import projectCover from '../assets/images/fingerprint-project-cover.png'
 
-import { Page, Section, ProjectCover } from '../components'
+import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
 import { Header } from '../containers'
 
@@ -72,6 +72,43 @@ function Fingerprint() {
             research provided me with relevant information to later on include
             in the designs.
           </p>
+        </div>
+        <div className='flex flex-col lg:flex-row justify-between'>
+          <Box
+            color='blue/10'
+            className='mt-[29px]  2xl:w-[387px] px-[23px] pb-[80px]'
+          >
+            <h4 className='text-medium2 font-medium'>The inmates</h4>
+            <div className='relative flex mt-[14px]'>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[14px] left-[32px]'
+              >
+                Fingerprints aren’t always usable
+              </StickyNote>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative right-[25px]'
+              >
+                A lot of people have worn-out prints.
+              </StickyNote>
+            </div>
+            <div className='relative flex justify-between mt-[32px]'>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[32px] left-[32px]'
+              >
+                Simple questions—like asking which fingers are missing—could
+                create discomfort or shame.Fingerprints aren’t always usable
+              </StickyNote>
+              <StickyNote size='small' color='blue' className='relative'>
+                Some people have missing fingers and hands.
+              </StickyNote>
+            </div>
+          </Box>
         </div>
       </Section>
 

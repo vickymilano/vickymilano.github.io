@@ -9,8 +9,10 @@ export default {
         page: '1200px',
       },
       fontSize: {
+        xsmall: ['12px', { lineHeight: '14px' }],
         small: ['16px', { lineHeight: '19px' }],
         medium: ['18px', { lineHeight: '29px' }],
+        medium2: ['24px', { lineHeight: '34px' }],
         large: ['32px', { lineHeight: '38px' }],
         xlarge: ['60px', { lineHeight: '66px' }],
         xxlarge: ['72px', { lineHeight: '84px' }],
