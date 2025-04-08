@@ -1,5 +1,6 @@
 import projectCover from '../assets/images/fingerprint-project-cover.png'
 import designingImage1 from '../assets/images/designing-01.png'
+import designingImage2 from '../assets/images/designing-02.png'
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
@@ -254,6 +255,28 @@ function Fingerprint() {
             will be important to save each time a finger si scanned.
           </p>
         </Section>
+      </Section>
+
+      <Section fluid className='pb-[120px]'>
+        <div
+          className='flex w-full justify-center'
+          style={{
+            background:
+              'linear-gradient(90deg, rgba(162,206,240,1) 0%, rgba(162,206,240,1) 50%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%)',
+          }}
+        >
+          <img src={designingImage2} alt='Designing Example' />
+        </div>
+        <div className='flex justify-center mt-[74px]'>
+          <Box color='blue/10' className='w-[729px]'>
+            <h4 className='text-medium font-medium'>Pilot & next steps</h4>
+            <p className='text-medium'>
+              The tool is currently being piloted in one prison. After feedback
+              and iteration, it will scale to all units across Buenos Aires
+              Province.
+            </p>
+          </Box>
+        </div>
       </Section>
 
       <Section

@@ -7,6 +7,7 @@ interface Props {
   fluid?: boolean
   background?: BackgroundColor
   as?: 'section' | 'footer'
+  style?: React.CSSProperties
 }
 
 const Section: React.FC<Props> = ({
@@ -15,9 +16,13 @@ const Section: React.FC<Props> = ({
   fluid = false,
   background = 'white',
   as: Component = 'section',
+  style,
 }) => {
   return (
-    <Component className={`${getBackgroundClass(background)} ${className}`}>
+    <Component
+      className={`${getBackgroundClass(background)} ${className}`}
+      style={style}
+    >
       <div className={fluid ? '' : 'max-w-[90%] 2xl:max-w-[1200px] mx-auto'}>
         {children}
       </div>
