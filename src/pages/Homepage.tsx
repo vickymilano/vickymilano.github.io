@@ -73,7 +73,7 @@ function Homepage() {
         number='03'
         title="Redesigning Tiendanube's Admin"
         subtitle='Redesign UX and UI of Tiendanube administrator, creating a better experience for over 30,000 users.'
-        link='#'
+        link={`${import.meta.env.BASE_URL}tiendanube`}
         background='grey'
         mainImage={{
           src: tiendanube,

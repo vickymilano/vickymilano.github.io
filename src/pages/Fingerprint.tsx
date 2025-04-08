@@ -16,7 +16,7 @@ function Fingerprint() {
         client='Government of Buenos Aires'
         title='Biometric Identification in Prisons'
         image={projectCover}
-        imageClassName=''
+        imageClassName='2xl:relative 2xl:right-[-120px]'
       />
 
       <Section className='py-[60px] lg:py-[120px]'>
