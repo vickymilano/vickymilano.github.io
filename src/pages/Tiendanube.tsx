@@ -1,6 +1,10 @@
 import projectCover from '../assets/images/tiendanube-project-cover.png'
-import designingImage1 from '../assets/images/designing-01.png'
-import designingImage2 from '../assets/images/designing-02.png'
+import designingImage3 from '../assets/images/designing-03.png'
+import designingImage4 from '../assets/images/designing-04.png'
+import designingImage5 from '../assets/images/designing-05.png'
+import tiendanubeImplementation from '../assets/images/tiendanube-implementation-01.png'
+import tiendanubeImplementation2 from '../assets/images/tiendanube-implementation-02.png'
+import tiendanubeImplementation3 from '../assets/images/tiendanube-implementation-03.png'
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
@@ -126,78 +130,100 @@ function Fingerprint() {
         <Section>
           <h3 className='text-large font-medium mb-[60px]'>Designing</h3>
         </Section>
-        <Box color='grey2' className='flex justify-center'>
-          <img src={designingImage1} alt='Designing' />
+        <Box color='white' className='flex justify-center'>
+          <img src={designingImage3} alt='Designing Tiendanube' />
         </Box>
         <Section className='mt-[60px] 2xl:max-w-[792px] mx-auto'>
-          <h4 className='text-medium2 font-medium'>Key design decisions:</h4>
-          <h5 className='text-medium font-medium mt-[40px]'>Physical mat</h5>
+          <h4 className='text-medium2 font-medium'>
+            Reframing the structure around user actions:
+          </h4>
           <p className='text-medium'>
-            Asking someone which fingers they still have, or whether it’s their
-            left or right hand, can lead to confusion—or worse, discomfort. Also
-            talking about index finger, thumb, small finger, can be confusing.
-          </p>
-          <p className='text-medium mt-[20px]'>
-            So instead of relying on verbal input, I decided to have a printed
-            hand mat: a numbered guide from 1 to 10 where people can simply
-            place their hands. This helps the operator visually confirm which
-            fingers are missing, and avoids awkward or unclear questions.
-          </p>
-          <h5 className='text-medium font-medium mt-[40px]'>
-            A focused, linear flow for operators
-          </h5>
-          <p className='text-medium'>
-            The person doing the census needs to manage multiple pieces of
-            information under pressure. I designed a focused, step-by-step UI to
-            make the process easier and less error-prone:
+            The most important design decision in this project wasn’t visual, it
+            was conceptual. Instead of organizing the admin based on internal
+            teams or feature categories, we restructured it around what users
+            actually come to do. We grouped functionality under verbs. This were
+            carefully chosen looking for clear, purposeful actions like:
           </p>
           <ul className='ml-[40px]'>
-            <li className='text-medium'>A checklist for scanned fingers</li>
-            <li className='text-medium'>A way to re-scan when necessary</li>
             <li className='text-medium'>
-              A clean interface for recording demographic and legal data
+              Administrar (Manage): orders, inventory, clients
             </li>
             <li className='text-medium'>
-              A visual overview of what’s been completed and what’s pending
+              Potenciar (Grow): integrations, selling channels
+            </li>
+            <li className='text-medium'>
+              Personalizar (Customize): themes, layout
+            </li>
+            <li className='text-medium'>
+              Configurar (Configure): shipping, payments, legal
             </li>
           </ul>
-          <h5 className='text-medium font-medium mt-[40px]'>
-            Always take 3 scans, no matter what
-          </h5>
-          <p className='text-medium'>
-            To improve accuracy and ensure we capture usable data, we decided to
-            scan each available finger three times, regardless of the scanner’s
-            score.
+          <p className='text-medium mt-[20px]'>
+            This shift simplified the mental model. It helped users find what
+            they were looking for by matching the main action they wanted to
+            achieve. It also invited users to investigate more features within
+            that section if that was the purposeful action they were interested
+            in.
           </p>
-          <h5 className='text-medium font-medium mt-[40px]'>
-            Save instances per take
-          </h5>
-          <p className='text-medium'>
-            Common light outtings could mean lossing a lot of information so it
-            will be important to save each time a finger si scanned.
-          </p>
+        </Section>
+
+        <Section fluid className='mt-[60px]'>
+          <img
+            className='w-full'
+            src={designingImage4}
+            alt='Designing Tiendanube 2'
+          />
         </Section>
       </Section>
 
-      <Section fluid className='pb-[120px]'>
-        <div
-          className='flex w-full justify-center'
-          style={{
-            background:
-              'linear-gradient(90deg, rgba(162,206,240,1) 0%, rgba(162,206,240,1) 50%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 100%)',
-          }}
-        >
-          <img src={designingImage2} alt='Designing Example' />
+      <Section fluid className='py-[120px]'>
+        <div className='2xl:max-w-[792px] mx-auto'>
+          <h3 className='text-large font-medium mb-[40px]'>Wireframing</h3>
+          <p className='text-medium'>
+            Once we had the new architecture, I created prototypes to explore
+            different layout ideas and test the flow. We tested the flows with
+            existing users via InVision and Maze, iterating on the feedback
+            before starting to develop it.
+          </p>
         </div>
-        <div className='flex justify-center mt-[74px]'>
-          <Box color='grey/25' className='w-[729px]'>
-            <h4 className='text-medium font-medium'>Pilot & next steps</h4>
-            <p className='text-medium'>
-              The tool is currently being piloted in one prison. After feedback
-              and iteration, it will scale to all units across Buenos Aires
-              Province.
-            </p>
-          </Box>
+        <img
+          src={designingImage5}
+          alt='Wireframing Tiendanube'
+          className='w-[85%] mx-auto'
+        />
+      </Section>
+
+      <Section fluid className='py-[120px]'>
+        <div className='2xl:max-w-[792px] mx-auto'>
+          <h3 className='text-large font-medium mb-[40px]'>Implementation</h3>
+          <p className='text-medium'>
+            We decided on an MVP to be able to have the first launch in less
+            than 6 weeks. We focused first on high-impact sections: orders,
+            products, and store configuration.
+          </p>
+          <p className='text-medium mt-[40px]'>
+            The new admin was launched gradually, starting with a small segment
+            of users. The team tracked behavior, collected feedback, and made
+            adjustments before scaling it to everyone. Over time, the full admin
+            migrated to the new structure.
+          </p>
+        </div>
+        <div className='flex flex-col gap-[60px]'>
+          <img
+            src={tiendanubeImplementation}
+            alt='Tiendanube implementation'
+            className='mx-auto'
+          />
+          <img
+            src={tiendanubeImplementation2}
+            alt='Tiendanube implementation'
+            className='w-full'
+          />
+          <img
+            src={tiendanubeImplementation3}
+            alt='Tiendanube implementation'
+            className='w-[83%] mx-auto'
+          />
         </div>
       </Section>
 
