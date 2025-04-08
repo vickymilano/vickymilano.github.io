@@ -154,6 +154,47 @@ function Fingerprint() {
               </StickyNote>
             </div>
           </Box>
+          <Box
+            color='blue/10'
+            className='mt-[29px] 2xl:w-[387px] px-[23px] pb-[120px]'
+          >
+            <h4 className='text-medium2 font-medium'>The hardware</h4>
+            <div className='relative flex justify-between mt-[14px]'>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative left-[49px]'
+              >
+                The scanner is not very reliable.
+              </StickyNote>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[37px] right-[15px]'
+              >
+                A "high" score doesn’t guarantee a usable match against the
+                national database.
+              </StickyNote>
+            </div>
+            <div className='relative flex justify-between'>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[32px] left-[10px]'
+              >
+                We can not have a "live feedback” to understand if it has
+                matched correctly with the database.
+              </StickyNote>
+              <StickyNote
+                size='small'
+                color='blue'
+                className='relative top-[80px] right-[2px]'
+              >
+                The scanner provides a quality score (0 to 100), but it doesn't
+                tell you what is wrong.
+              </StickyNote>
+            </div>
+          </Box>
         </div>
       </Section>
 
