@@ -1,4 +1,5 @@
 import projectCover from '../assets/images/fingerprint-project-cover.png'
+import designingImage1 from '../assets/images/designing-01.png'
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
@@ -196,6 +197,63 @@ function Fingerprint() {
             </div>
           </Box>
         </div>
+      </Section>
+
+      <Section fluid className='py-[120px]'>
+        <Section>
+          <h3 className='text-large font-medium mb-[60px]'>Designing</h3>
+        </Section>
+        <Box color='grey2' className='flex justify-center'>
+          <img src={designingImage1} alt='Designing' />
+        </Box>
+        <Section className='mt-[60px] 2xl:max-w-[792px] mx-auto'>
+          <h4 className='text-medium2 font-medium'>Key design decisions:</h4>
+          <h5 className='text-medium font-medium mt-[40px]'>Physical mat</h5>
+          <p className='text-medium'>
+            Asking someone which fingers they still have, or whether it’s their
+            left or right hand, can lead to confusion—or worse, discomfort. Also
+            talking about index finger, thumb, small finger, can be confusing.
+          </p>
+          <p className='text-medium mt-[20px]'>
+            So instead of relying on verbal input, I decided to have a printed
+            hand mat: a numbered guide from 1 to 10 where people can simply
+            place their hands. This helps the operator visually confirm which
+            fingers are missing, and avoids awkward or unclear questions.
+          </p>
+          <h5 className='text-medium font-medium mt-[40px]'>
+            A focused, linear flow for operators
+          </h5>
+          <p className='text-medium'>
+            The person doing the census needs to manage multiple pieces of
+            information under pressure. I designed a focused, step-by-step UI to
+            make the process easier and less error-prone:
+          </p>
+          <ul className='ml-[40px]'>
+            <li className='text-medium'>A checklist for scanned fingers</li>
+            <li className='text-medium'>A way to re-scan when necessary</li>
+            <li className='text-medium'>
+              A clean interface for recording demographic and legal data
+            </li>
+            <li className='text-medium'>
+              A visual overview of what’s been completed and what’s pending
+            </li>
+          </ul>
+          <h5 className='text-medium font-medium mt-[40px]'>
+            Always take 3 scans, no matter what
+          </h5>
+          <p className='text-medium'>
+            To improve accuracy and ensure we capture usable data, we decided to
+            scan each available finger three times, regardless of the scanner’s
+            score.
+          </p>
+          <h5 className='text-medium font-medium mt-[40px]'>
+            Save instances per take
+          </h5>
+          <p className='text-medium'>
+            Common light outtings could mean lossing a lot of information so it
+            will be important to save each time a finger si scanned.
+          </p>
+        </Section>
       </Section>
 
       <Section

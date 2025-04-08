@@ -20,6 +20,7 @@ export default {
       colors: {
         white: '#ffffff',
         grey: '#ECEBEC',
+        grey2: '#FAFAFA',
         purple: {
           light: '#C8A3F0',
           DEFAULT: '#6D09D8',
