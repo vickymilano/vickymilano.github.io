@@ -2,7 +2,7 @@ import projectCover from '../assets/images/tiendanube-project-cover.png'
 import designingImage1 from '../assets/images/designing-01.png'
 import designingImage2 from '../assets/images/designing-02.png'
 
-import { Page, Section, ProjectCover } from '../components'
+import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
 import { Header } from '../containers'
 import Card from '../components/Card'
@@ -24,7 +24,7 @@ function Fingerprint() {
         <div className='2xl:max-w-[792px] mx-auto'>
           <h2 className='text-large font-medium mb-[12px]'>Overview</h2>
           <p className='text-medium'>
-            In 2020, I led the redesign of Tiendanube’s admin experience. The
+            In 2020, I led the redesign of Tiendanube s admin experience. The
             admin panel was used every day by tens of thousands of store owners
             to manage their products, orders, payments, and more. Over time, the
             platform grew in complexity and with that, the experience started to
@@ -98,6 +98,28 @@ function Fingerprint() {
             />
           </div>
         </Section>
+
+        <div className='mt-[60px] 2xl:max-w-[792px] mx-auto'>
+          <p className='text-medium'>
+            With all that information in mind, the following patterns helped me
+            to drive the next steps.
+          </p>
+        </div>
+
+        <div className='flex 2xl:w-[930px] gap-[20px] mx-auto mt-[60px]'>
+          <StickyNote size='big' color='grey'>
+            Users don’t think in terms of features, they think in terms of
+            actions.
+          </StickyNote>
+          <StickyNote size='big' color='grey'>
+            The existing navigation mirrored internal team structures, not user
+            goals.
+          </StickyNote>
+          <StickyNote size='big' color='grey'>
+            New users in particular struggled to understand what the admin was
+            offering.
+          </StickyNote>
+        </div>
       </Section>
 
       <Section fluid className='py-[120px]'>
