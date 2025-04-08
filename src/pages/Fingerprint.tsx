@@ -92,7 +92,7 @@ function Fingerprint() {
               <StickyNote
                 size='small'
                 color='blue'
-                className='relative right-[25px]'
+                className='relative -right-[20px]'
               >
                 A lot of people have worn-out prints.
               </StickyNote>

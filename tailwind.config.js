@@ -21,6 +21,7 @@ export default {
         white: '#ffffff',
         grey: '#ECEBEC',
         grey2: '#FAFAFA',
+        grey3: '#666566',
         purple: {
           light: '#C8A3F0',
           DEFAULT: '#6D09D8',

@@ -5,6 +5,6 @@ export type BackgroundColor =
   | 'purple'
   | 'blue'
   | 'purple-light'
-  | 'grey/10'
+  | 'grey/25'
   | 'purple-light/10'
   | 'blue/10'
