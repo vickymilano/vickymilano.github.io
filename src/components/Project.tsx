@@ -45,9 +45,9 @@ const Project = forwardRef<HTMLElement, Props>(
         <article
           ref={ref}
           id={id}
-          className={`flex flex-col lg:flex-row justify-between py-[60px] lg:py-[70px] lg:py-[140px] ${className}`}
+          className={`flex flex-col lg:flex-row lg:gap-[40px] justify-between lg:items-center py-[60px] lg:py-[70px] ${className}`}
         >
-          <div className='flex flex-col lg:max-w-[430px] flex-1'>
+          <div className='flex flex-col xl:max-w-[430px] flex-1'>
             <p className='text-small'>{number}.</p>
             <h2 className='text-large2 font-medium mt-[60px]'>{title}</h2>
             <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
@@ -55,20 +55,22 @@ const Project = forwardRef<HTMLElement, Props>(
               SEE MORE →
             </a>
           </div>
-          <div className='relative mt-16 lg:mt-0 flex justify-center'>
-            <img
-              src={mainImage.src}
-              alt={mainImage.alt}
-              className={`relative z-10 ${imageClassName}`}
-            />
-            {decorations.map((decoration, index) => (
+          <div className='mt-16 lg:mt-0 flex justify-center flex-1'>
+            <div className='relative'>
               <img
-                key={index}
-                src={decoration.src}
-                alt={decoration.alt}
-                className={decoration.className}
+                src={mainImage.src}
+                alt={mainImage.alt}
+                className={`relative z-10 object-contain ${imageClassName}`}
               />
-            ))}
+              {decorations.map((decoration, index) => (
+                <img
+                  key={index}
+                  src={decoration.src}
+                  alt={decoration.alt}
+                  className={decoration.className}
+                />
+              ))}
+            </div>
           </div>
         </article>
       </Section>

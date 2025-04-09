@@ -55,6 +55,7 @@ function Homepage() {
         subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
         background='purple-light'
         link={`${import.meta.env.BASE_URL}smart-interviews`}
+        className='py-[120px]'
         mainImage={{
           src: smartInterviews,
           alt: 'Smart interviews',
@@ -62,8 +63,23 @@ function Homepage() {
         decorations={[
           {
             src: pixelSparks,
-            alt: 'Pixel sparks',
-            className: 'absolute top-0 right-0 -translate-y-1/2',
+            alt: 'Pixel sparks 1',
+            className:
+              'absolute opacity-35 scale-80 -top-[114px] -right-[18px] ' +
+              'md:scale-60 md:-top-[125px] md:-right-0 ' +
+              'lg:scale-60 lg:-top-[125px] lg:-right-[30px] ' +
+              'xl:scale-80 xl:-top-[125px] xl:-right-[0px] ' +
+              '2xl:scale-90 2xl:-top-[120px] 2xl:right-[10px]',
+          },
+          {
+            src: pixelSparks,
+            alt: 'Pixel sparks 2',
+            className:
+              'absolute opacity-35 scale-40 bottom-[-130px] left-[-20px] ',
+            // 'md:scale-60 md:-top-[125px] md:-right-0 ' +
+            // 'lg:scale-60 lg:-top-[125px] lg:-right-[30px] ' +
+            // 'xl:scale-80 xl:-top-[125px] xl:-right-[0px] ' +
+            // '2xl:scale-90 2xl:-top-[120px] 2xl:right-[10px]',
           },
         ]}
       />
@@ -86,7 +102,6 @@ function Homepage() {
           },
         ]}
         className='lg:pt-[130px] lg:pb-[90px]'
-        imageClassName='lg:mr-[140px]'
       />
       <Project
         number='03'
@@ -94,11 +109,12 @@ function Homepage() {
         subtitle='Redesign UX and UI of Tiendanube administrator, creating a better experience for over 30,000 users.'
         link={`${import.meta.env.BASE_URL}tiendanube`}
         background='grey'
+        className='lg:py-[76px]!'
         mainImage={{
           src: tiendanube,
           alt: 'Tiendanube Admin',
         }}
-        imageClassName='lg:scale-80 xl:scale-100'
+        imageClassName='xl:scale-100'
       />
       <Section
         background='purple'
