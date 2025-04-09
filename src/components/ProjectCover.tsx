@@ -24,7 +24,7 @@ const ProjectCover: React.FC<Props> = ({
   color = 'white',
 }) => {
   return (
-    <Section className='relative w-full' background='white'>
+    <Section className='relative w-full overflow-hidden' background='white'>
       <div
         className={`absolute z-10 top-0 right-0 2xl:w-[56%] 2xl:h-[100%] ${getBackgroundClass(
           color
@@ -39,7 +39,7 @@ const ProjectCover: React.FC<Props> = ({
           <Header />
 
           <article
-            className={`flex flex-col lg:flex-row flex-1 justify-between lg:mt-[70px] 2xl:gap-[54px] ${className}`}
+            className={`flex flex-col lg:flex-row flex-1 justify-between lg:mt-[50px] 2xl:gap-[54px] ${className}`}
           >
             <div className='flex flex-col lg:gap-[160px] 2xl:max-w-[454px] mb-[40px] 2xl:mt-[50px]'>
               <div>

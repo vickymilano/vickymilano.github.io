@@ -4,19 +4,17 @@ import designingImage2 from '../assets/images/designing-02.png'
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
-import { Header } from '../containers'
 
 function Fingerprint() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <ProjectCover
-        preContent={<Header />}
         year={2024}
         color='blue'
         client='Government of Buenos Aires'
         title='Biometric Identification in Prisons'
         image={projectCover}
-        imageClassName='2xl:relative 2xl:right-[-120px]'
+        imageClassName='2xl:relative 2xl:right-[-120px] 2xl:max-h-[554px]'
       />
 
       <Section className='py-[60px] lg:py-[120px]'>

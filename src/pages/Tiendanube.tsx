@@ -8,20 +8,18 @@ import tiendanubeImplementation3 from '../assets/images/tiendanube-implementatio
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
-import { Header } from '../containers'
 import Card from '../components/Card'
 
 function Fingerprint() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <ProjectCover
-        preContent={<Header />}
         year={2019}
         color='grey'
         client='Tiendanube'
         title='Redesigning Tiendanube’s Admin'
         image={projectCover}
-        imageClassName=''
+        imageClassName='2xl:max-h-[500px]'
       />
 
       <Section className='py-[60px] lg:py-[120px]'>
