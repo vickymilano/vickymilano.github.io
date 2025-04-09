@@ -28,12 +28,12 @@ function Homepage() {
       <Section className='pb-[74px]'>
         <Header />
 
-        <div className='flex flex-col mt-[80px] 2xl:mt-[136px] font-medium'>
+        <div className='flex flex-col mt-[60px] 2xl:mt-[136px] font-medium'>
           <p>
             <span className='text-medium text-purple'>Hi!</span> I'm Vicky
             Milano
           </p>
-          <h1 className='mt-[20px] lg:mt-[48px] text-large2 xl:text-xxlarge max-w-[910px]'>
+          <h1 className='mt-[40px] lg:mt-[48px] text-large2 xl:text-xxlarge max-w-[910px]'>
             I design digital products that solve real problems
             <span className='text-purple font-mono text-[50px]'>.</span>
           </h1>
