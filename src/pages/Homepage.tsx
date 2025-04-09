@@ -35,7 +35,7 @@ function Homepage() {
         title='Smart interviews'
         subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
         background='purple-light'
-        link='#'
+        link={`${import.meta.env.BASE_URL}smart-interviews`}
         mainImage={{
           src: smartInterviews,
           alt: 'Smart interviews',
