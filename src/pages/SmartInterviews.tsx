@@ -4,10 +4,10 @@ import smartInterviewsImage1 from '../assets/images/smart-interviews-01.png'
 import smartInterviewsImage2 from '../assets/images/smart-interviews-02.png'
 import smartInterviewsImage3 from '../assets/images/smart-interviews-03.png'
 import smartInterviewsImage4 from '../assets/images/smart-interviews-04.png'
+import pixelSparks from '../assets/images/pixel-sparks.png'
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
-import { Header } from '../containers'
 
 const designingNotes = [
   'What if AI could create a score in order to quickly make decisions and compare candidates?',
@@ -184,10 +184,16 @@ function SmartInterviews() {
 
       <div>
         <Section className='relative w-full' background='grey'>
-          <div className='absolute z-10 top-0 left-0 2xl:w-[1024px] 2xl:h-[1184px] bg-purple-light'></div>
+          <div className='absolute z-10 top-0 right-0 2xl:w-[36%] 2xl:h-[1064px] bg-white'></div>
+          <div className='absolute z-10 top-0 left-0 2xl:w-[64%] 2xl:h-[1184px] bg-purple-light'></div>
+          <img
+            src={pixelSparks}
+            alt='Pixel sparks'
+            className='absolute top-[120px] right-[20%] 2xl:h-[287px] opacity-25 z-20'
+          />
           <Section
             fluid
-            className='pt-[120px] relative z-20'
+            className='pt-[60px] relative z-20'
             style={{ backgroundColor: 'transparent' }}
           >
             <Section
