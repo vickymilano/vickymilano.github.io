@@ -8,8 +8,21 @@ import arrow from '../assets/icons/arrow-down.svg'
 
 import { Page, Section, Project } from '../components'
 import { Header } from '../containers'
+import { useRef } from 'react'
 
 function Homepage() {
+  const smartInterviewsRef = useRef<HTMLElement>(null)
+
+  const handleScrollToFirstProject = () => {
+    if (!smartInterviewsRef.current) {
+      return
+    }
+
+    const offsetTop =
+      smartInterviewsRef.current.getBoundingClientRect().top + window.scrollY
+    window.scrollTo({ top: offsetTop - 2, behavior: 'smooth' })
+  }
+
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <Section className='pb-[74px]'>
@@ -27,10 +40,16 @@ function Homepage() {
           <p className='mt-[24px] text-medium'>[One smart pixel at a time]</p>
         </div>
         <div className='mt-[165px] flex justify-center'>
-          <img src={arrow} alt='Arrow down' />
+          <button
+            className='cursor-pointer p-2'
+            onClick={handleScrollToFirstProject}
+          >
+            <img src={arrow} alt='Arrow down' />
+          </button>
         </div>
       </Section>
       <Project
+        ref={smartInterviewsRef}
         number='01'
         title='Smart interviews'
         subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
@@ -90,7 +109,7 @@ function Homepage() {
             <p className='text-small'>
               I like to design with purpose, not just pretty pixels.
             </p>
-            <h3 className='text-xlarge'>Let’s build something that matters.</h3>
+            <h3 className='text-xlarge'>Let's build something that matters.</h3>
           </div>
           <div className='flex flex-col gap-[40px] mr-[90px] text-[24px]'>
             <a href='mailto:vickymilanog@gmail.com' target='_blank'>
