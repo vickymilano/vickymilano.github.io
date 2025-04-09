@@ -45,11 +45,11 @@ const Project = forwardRef<HTMLElement, Props>(
         <article
           ref={ref}
           id={id}
-          className={`flex flex-col lg:flex-row justify-between py-[70px] lg:py-[140px] ${className}`}
+          className={`flex flex-col lg:flex-row justify-between py-[60px] lg:py-[70px] lg:py-[140px] ${className}`}
         >
           <div className='flex flex-col lg:max-w-[430px] flex-1'>
             <p className='text-small'>{number}.</p>
-            <h2 className='text-xlarge font-medium mt-[60px]'>{title}</h2>
+            <h2 className='text-large2 font-medium mt-[60px]'>{title}</h2>
             <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
             <a href={link} className='text-xsmall mt-[40px]'>
               SEE MORE →

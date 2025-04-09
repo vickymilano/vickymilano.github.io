@@ -14,6 +14,7 @@ export default {
         medium: ['18px', { lineHeight: '29px' }],
         medium2: ['24px', { lineHeight: '34px' }],
         large: ['32px', { lineHeight: '38px' }],
+        large2: ['48px', { lineHeight: '53px' }],
         xlarge: ['60px', { lineHeight: '66px' }],
         xxlarge: ['72px', { lineHeight: '84px' }],
       },

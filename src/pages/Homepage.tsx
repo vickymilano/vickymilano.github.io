@@ -28,18 +28,18 @@ function Homepage() {
       <Section className='pb-[74px]'>
         <Header />
 
-        <div className='flex flex-col mt-[136px] font-medium'>
-          <h1>
+        <div className='flex flex-col mt-[80px] 2xl:mt-[136px] font-medium'>
+          <p>
             <span className='text-medium text-purple'>Hi!</span> I'm Vicky
             Milano
-          </h1>
-          <p className='mt-[48px] text-xxlarge max-w-[910px]'>
+          </p>
+          <h1 className='mt-[20px] lg:mt-[48px] text-large2 xl:text-xxlarge max-w-[910px]'>
             I design digital products that solve real problems
             <span className='text-purple font-mono text-[50px]'>.</span>
-          </p>
+          </h1>
           <p className='mt-[24px] text-medium'>[One smart pixel at a time]</p>
         </div>
-        <div className='mt-[165px] flex justify-center'>
+        <div className='mt-[80px] lg:mt-[165px] flex justify-center'>
           <button
             className='cursor-pointer p-2'
             onClick={handleScrollToFirstProject}
@@ -109,13 +109,21 @@ function Homepage() {
             <p className='text-small'>
               I like to design with purpose, not just pretty pixels.
             </p>
-            <h3 className='text-xlarge'>Let's build something that matters.</h3>
+            <h3 className='text-large2'>Let's build something that matters.</h3>
           </div>
           <div className='flex flex-col gap-[40px] mr-[90px] text-[24px]'>
-            <a href='mailto:vickymilanog@gmail.com' target='_blank'>
+            <a
+              className='text-medium lg:text-medium2'
+              href='mailto:vickymilanog@gmail.com'
+              target='_blank'
+            >
               vickymilanog@gmail.com ↗
             </a>
-            <a href='https://www.linkedin.com/in/vicky-milano' target='_blank'>
+            <a
+              className='text-medium lg:text-medium2'
+              href='https://www.linkedin.com/in/vicky-milano'
+              target='_blank'
+            >
               LinkedIn ↗
             </a>
           </div>

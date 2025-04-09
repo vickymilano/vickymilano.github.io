@@ -6,8 +6,7 @@ const Header: React.FC = () => {
       <div>
         <a href={import.meta.env.BASE_URL}>VICKY MILANO</a>
       </div>
-      <div className='flex gap-16'>
-        <a href='#'>WORK</a>
+      <div className='flex gap-8 xl:gap-12'>
         <a href={cv} download='Vicky Milano - CV.pdf'>
           CV
         </a>
