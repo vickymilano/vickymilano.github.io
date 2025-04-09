@@ -47,11 +47,10 @@ function SmartInterviews() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <ProjectCover
-        preContent={<Header />}
         year={2025}
         color='purple-light'
         client='Crosschq'
-        title='Redesigning Tiendanube’s Admin'
+        title='Smart interviews'
         image={projectCover}
         imageClassName='w-[719px] h-[458px]'
       />
