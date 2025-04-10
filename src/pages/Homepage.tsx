@@ -55,7 +55,7 @@ function Homepage() {
         subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
         background='purple-light'
         link={`${import.meta.env.BASE_URL}smart-interviews`}
-        className='pt-[140px]! pb-[120px]!'
+        className='py-[140px]! pb-[120px]!'
         mainImage={{
           src: smartInterviews,
           alt: 'Smart interviews',
@@ -89,15 +89,16 @@ function Homepage() {
           src: fingerprintProject,
           alt: 'Fingerprint Project',
         }}
+        imageClassName='max-h-[550px]'
         decorations={[
           {
             src: pixelFingerprint,
             alt: 'Pixel fingerprint',
             className:
-              'absolute bottom-0 right-0 translate-x-1/4 translate-y-1/2',
+              'absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 scale-150 opacity-30 xl:opacity-100',
           },
         ]}
-        className='lg:pt-[130px] lg:pb-[90px]'
+        className='lg:py-[130px]'
       />
       <Project
         number='03'
@@ -105,7 +106,7 @@ function Homepage() {
         subtitle='Redesign UX and UI of Tiendanube administrator, creating a better experience for over 30,000 users.'
         link={`${import.meta.env.BASE_URL}tiendanube`}
         background='grey'
-        className='lg:py-[76px]!'
+        className='lg:py-[130px]!'
         mainImage={{
           src: tiendanube,
           alt: 'Tiendanube Admin',

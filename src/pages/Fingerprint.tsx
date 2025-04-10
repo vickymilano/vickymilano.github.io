@@ -207,11 +207,15 @@ function Fingerprint() {
       </Section>
 
       <Section fluid className='py-[60px] lg:py-[120px]'>
-        <Section>
+        <ReadingSection>
           <h3 className='text-large font-medium mb-[60px]'>Designing</h3>
-        </Section>
+        </ReadingSection>
         <Box color='grey2' className='flex justify-center'>
-          <img src={designingImage1} alt='Designing' />
+          <img
+            src={designingImage1}
+            alt='Designing'
+            className='object-contain max-h-[610px]'
+          />
         </Box>
         <ReadingSection className='mt-[60px]'>
           <h4 className='text-medium2 font-medium'>Key design decisions:</h4>
