@@ -129,14 +129,14 @@ function Homepage() {
               href='mailto:vickymilanog@gmail.com'
               target='_blank'
             >
-              vickymilanog@gmail.com ↗
+              <span className='underline'>vickymilanog@gmail.com</span> ↗
             </a>
             <a
               className='text-medium lg:text-medium2'
               href='https://www.linkedin.com/in/vicky-milano'
               target='_blank'
             >
-              LinkedIn ↗
+              <span className='underline'>LinkedIn</span> ↗
             </a>
           </div>
         </article>

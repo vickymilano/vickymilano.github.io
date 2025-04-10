@@ -256,7 +256,16 @@ function SmartInterviews() {
         className='text-center text-small my-[20px] font-medium'
         as='footer'
       >
-        [ Done with <span className='text-purple'>&lt;3</span> ]
+        <button
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            })
+          }
+        >
+          ↑ Back to Top
+        </button>
       </Section>
     </Page>
   )
