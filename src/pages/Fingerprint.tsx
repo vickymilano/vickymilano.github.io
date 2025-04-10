@@ -42,9 +42,9 @@ function Fingerprint() {
           </p>
           <Box color='blue/10' className='mt-[29px]'>
             <h3 className='text-medium font-medium'>My role</h3>
-            <p className='text-medium mt-[20px]'>
+            <div className='text-medium mt-[20px]'>
               Led the UX design from end to end. This included:
-              <ul className='list-disc list-inside'>
+              <ul className='ml-[40px] flex flex-col gap-[10px]'>
                 <li>
                   Conducting contextual interviews with people who currently or
                   formerly worked in prisons Mapping out technical constraints.
@@ -58,7 +58,7 @@ function Fingerprint() {
                   product decisions.
                 </li>
               </ul>
-            </p>
+            </div>
           </Box>
         </div>
       </Section>
@@ -76,7 +76,7 @@ function Fingerprint() {
         <div className='flex flex-col lg:flex-row justify-between items-start'>
           <Box
             color='blue/10'
-            className='mt-[29px]  2xl:w-[387px] px-[23px] pb-[80px]'
+            className='mt-[29px] w-full 2xl:w-[387px] px-[23px] pb-[80px]'
           >
             <h4 className='text-medium2 font-medium'>The inmates</h4>
             <div className='relative flex mt-[14px]'>
@@ -111,9 +111,9 @@ function Fingerprint() {
           </Box>
           <Box
             color='blue/10'
-            className='mt-[29px] 2xl:w-[387px] px-[23px] pb-[80px]'
+            className='mt-[29px] w-full 2xl:w-[387px] px-[23px] pb-[80px]'
           >
-            <h4 className='text-medium2 font-medium'>The context</h4>
+            <h4 className='text-medium2 font-medium mb-[40px]'>The context</h4>
             <div className='relative flex justify-between mt-[14px]'>
               <StickyNote size='small' color='blue' className='relative'>
                 The census will be conducted manually
@@ -156,9 +156,9 @@ function Fingerprint() {
           </Box>
           <Box
             color='blue/10'
-            className='mt-[29px] 2xl:w-[387px] px-[23px] pb-[120px]'
+            className='mt-[29px] w-full 2xl:w-[387px] px-[23px] pb-[120px]'
           >
-            <h4 className='text-medium2 font-medium'>The hardware</h4>
+            <h4 className='text-medium2 font-medium mb-[40px]'>The hardware</h4>
             <div className='relative flex justify-between mt-[14px]'>
               <StickyNote
                 size='small'

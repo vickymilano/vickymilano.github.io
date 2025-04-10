@@ -51,7 +51,7 @@ const Project = forwardRef<HTMLElement, Props>(
             <p className='text-small'>{number}.</p>
             <h2 className='text-large2 font-medium mt-[60px]'>{title}</h2>
             <h3 className='text-medium mt-[12px]'>{subtitle}</h3>
-            <a href={link} className='text-xsmall mt-[40px]'>
+            <a href={link} className='text-small mt-[40px]'>
               SEE MORE →
             </a>
           </div>

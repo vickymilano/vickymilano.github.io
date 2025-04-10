@@ -2,7 +2,7 @@ import cv from '../assets/files/cv.pdf'
 
 const Header: React.FC = () => {
   return (
-    <div className='flex justify-between items-center h-[84px] font-medium'>
+    <div className='sticky flex justify-between items-center h-[84px] font-medium'>
       <div>
         <a href={import.meta.env.BASE_URL}>VICKY MILANO</a>
       </div>

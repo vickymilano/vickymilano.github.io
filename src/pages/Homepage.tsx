@@ -55,7 +55,7 @@ function Homepage() {
         subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
         background='purple-light'
         link={`${import.meta.env.BASE_URL}smart-interviews`}
-        className='py-[120px]'
+        className='pt-[140px]! pb-[120px]!'
         mainImage={{
           src: smartInterviews,
           alt: 'Smart interviews',
@@ -76,10 +76,6 @@ function Homepage() {
             alt: 'Pixel sparks 2',
             className:
               'absolute opacity-35 scale-40 bottom-[-130px] left-[-20px] ',
-            // 'md:scale-60 md:-top-[125px] md:-right-0 ' +
-            // 'lg:scale-60 lg:-top-[125px] lg:-right-[30px] ' +
-            // 'xl:scale-80 xl:-top-[125px] xl:-right-[0px] ' +
-            // '2xl:scale-90 2xl:-top-[120px] 2xl:right-[10px]',
           },
         ]}
       />

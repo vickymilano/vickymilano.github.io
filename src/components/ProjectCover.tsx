@@ -26,20 +26,21 @@ const ProjectCover: React.FC<Props> = ({
   return (
     <Section className='relative w-full overflow-hidden' background='white'>
       <div
-        className={`absolute z-10 top-0 right-0 2xl:w-[56%] 2xl:h-[100%] ${getBackgroundClass(
-          color
-        )}`}
+        className={`absolute z-10 top-0 right-0
+            w-[100%] h-[100%]
+           2xl:w-[56%] 2xl:h-[100%] 
+          ${getBackgroundClass(color)}`}
       ></div>
       <Section
         fluid
-        className='relative z-20 pb-[60px]'
+        className='relative z-20 pb-[60px] mx-0 px-0'
         style={{ backgroundColor: 'transparent' }}
       >
-        <Section style={{ backgroundColor: 'transparent' }}>
+        <Section fluid style={{ backgroundColor: 'transparent' }}>
           <Header />
 
           <article
-            className={`flex flex-col lg:flex-row flex-1 justify-between lg:mt-[50px] 2xl:gap-[54px] ${className}`}
+            className={`flex flex-col lg:flex-row flex-1 justify-between mt-[40px] lg:mt-[50px] 2xl:gap-[54px] ${className}`}
           >
             <div className='flex flex-col lg:gap-[160px] 2xl:max-w-[454px] mb-[40px] 2xl:mt-[50px]'>
               <div>
@@ -49,7 +50,9 @@ const ProjectCover: React.FC<Props> = ({
                   {client}
                 </p>
               </div>
-              <h1 className='text-xlarge font-medium'>{title}</h1>
+              <h1 className='text-large2 lg:text-xlarge font-medium mt-[48px]'>
+                {title}
+              </h1>
             </div>
 
             <img
