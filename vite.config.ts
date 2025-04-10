@@ -4,13 +4,14 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/portfolio-vichu/',
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
       input: {
         main: './index.html',
         fingerprint: './fingerprint.html',
+        smartInterviews: './smart-interviews.html',
+        tiendanube: './tiendanube.html',
       },
     },
   },
