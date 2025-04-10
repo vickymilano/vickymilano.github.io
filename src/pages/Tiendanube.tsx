@@ -9,6 +9,7 @@ import tiendanubeImplementation3 from '../assets/images/tiendanube-implementatio
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
 import Card from '../components/Card'
+import ReadingSection from '../containers/ReadingSection'
 
 function Fingerprint() {
   return (
@@ -22,40 +23,37 @@ function Fingerprint() {
         imageClassName='2xl:max-h-[500px]'
       />
 
-      <Section className='py-[60px] lg:py-[120px]'>
-        <div className='2xl:max-w-[792px] mx-auto'>
-          <h2 className='text-large font-medium mb-[12px]'>Overview</h2>
-          <p className='text-medium'>
-            In 2020, I led the redesign of Tiendanube s admin experience. The
-            admin panel was used every day by tens of thousands of store owners
-            to manage their products, orders, payments, and more. Over time, the
-            platform grew in complexity and with that, the experience started to
-            feel cluttered, inconsistent, and hard to navigate.
-          </p>
+      <ReadingSection className='py-[60px] lg:py-[120px]'>
+        <h2 className='text-large font-medium mb-[12px]'>Overview</h2>
+        <p className='text-medium'>
+          In 2020, I led the redesign of Tiendanube s admin experience. The
+          admin panel was used every day by tens of thousands of store owners to
+          manage their products, orders, payments, and more. Over time, the
+          platform grew in complexity and with that, the experience started to
+          feel cluttered, inconsistent, and hard to navigate.
+        </p>
+        <p className='text-medium mt-[20px]'>
+          The goal of this project was to rethink the admin’s structure and user
+          experience. Not by adding more features, but by making it easier to
+          understand, simpler to use, and aligned with how people actually work.
+        </p>
+        <Box color='grey/25' className='mt-[29px]'>
+          <h3 className='text-medium font-medium'>My role</h3>
           <p className='text-medium mt-[20px]'>
-            The goal of this project was to rethink the admin’s structure and
-            user experience. Not by adding more features, but by making it
-            easier to understand, simpler to use, and aligned with how people
-            actually work.
+            Led the UX and UI design from discovery to implementation:
+            <ul className='mt-[10px] ml-[40px] flex flex-col gap-[10px]'>
+              <li>Conducted user interviews and research</li>
+              <li>Defined the new product architecture</li>
+              <li>Designed and tested low-to-high fidelity prototypes</li>
+              <li>Implemented most of the frontend code</li>
+              <li>Supported rollout and feedback loops</li>
+            </ul>
           </p>
-          <Box color='grey/25' className='mt-[29px]'>
-            <h3 className='text-medium font-medium'>My role</h3>
-            <p className='text-medium mt-[20px]'>
-              Led the UX and UI design from discovery to implementation:
-              <ul className='list-disc list-inside'>
-                <li>Conducted user interviews and research</li>
-                <li>Defined the new product architecture</li>
-                <li>Designed and tested low-to-high fidelity prototypes</li>
-                <li>Implemented most of the frontend code</li>
-                <li>Supported rollout and feedback loops</li>
-              </ul>
-            </p>
-          </Box>
-        </div>
-      </Section>
+        </Box>
+      </ReadingSection>
 
-      <Section fluid className='py-[60px] lg:py-[120px]'>
-        <div className='2xl:max-w-[792px] mx-auto'>
+      <Section fluid className='py-[80px] lg:py-[120px]'>
+        <ReadingSection>
           <h3 className='text-large font-medium mb-[12px]'>Understanding</h3>
           <p className='text-medium mt-[20px]'>
             I started the redesigning of Tiendanube’s admin panel by deeply
@@ -74,41 +72,45 @@ function Fingerprint() {
             business perspective, what features were critical, how users
             navigated today, and what the product team expected to scale next.
           </p>
-        </div>
+        </ReadingSection>
 
         <Section>
-          <div className='flex flex-1 gap-[20px] mt-[60px]'>
+          <div className='flex flex-col md:flex-row md:flex-wrap gap-[20px] mt-[40px] lg:mt-[60px]'>
             <Card
               number='01.'
               title='User interviews'
               description="I interviewed users who used the platform daily. They often couldn't"
+              className='md:w-[calc(50%-20px)] xl:w-[unset] xl:flex-1'
             />
             <Card
               number='02.'
               title='Card-sorting'
               description='Conducted card-sorting excercises with over 30 users to rethink the product architecture'
+              className='md:w-[calc(50%-20px)] xl:w-[unset] xl:flex-1'
             />
             <Card
               number='03.'
               title='Data analysis'
               description='Gathered and analyzes data to understand how the users used the platform.'
+              className='md:w-[calc(50%-20px)] xl:w-[unset] xl:flex-1'
             />
             <Card
               number='04.'
               title='User interviews'
               description='Interviews with main stakeholders to understand business decisions and the vision of the product.'
+              className='md:w-[calc(50%-20px)] xl:w-[unset] xl:flex-1'
             />
           </div>
         </Section>
 
-        <div className='mt-[60px] 2xl:max-w-[792px] mx-auto'>
+        <ReadingSection className='mt-[60px]'>
           <p className='text-medium'>
             With all that information in mind, the following patterns helped me
             to drive the next steps.
           </p>
-        </div>
+        </ReadingSection>
 
-        <div className='flex 2xl:w-[930px] gap-[20px] mx-auto mt-[60px]'>
+        <div className='flex flex-col md:flex-row items-center justify-center 2xl:w-[930px] gap-[20px] mx-auto mt-[60px]'>
           <StickyNote size='big' color='grey'>
             Users don’t think in terms of features, they think in terms of
             actions.
@@ -125,14 +127,14 @@ function Fingerprint() {
       </Section>
 
       <Section fluid className='py-[120px]'>
-        <Section>
+        <ReadingSection>
           <h3 className='text-large font-medium mb-[60px]'>Designing</h3>
-        </Section>
+        </ReadingSection>
         <Box color='white' className='flex justify-center'>
           <img src={designingImage3} alt='Designing Tiendanube' />
         </Box>
-        <Section className='mt-[60px] 2xl:max-w-[792px] mx-auto'>
-          <h4 className='text-medium2 font-medium'>
+        <ReadingSection className='mt-[60px]'>
+          <h4 className='text-medium2 font-medium mb-[20px]'>
             Reframing the structure around user actions:
           </h4>
           <p className='text-medium'>
@@ -163,7 +165,7 @@ function Fingerprint() {
             that section if that was the purposeful action they were interested
             in.
           </p>
-        </Section>
+        </ReadingSection>
 
         <Section fluid className='mt-[60px]'>
           <img
@@ -175,7 +177,7 @@ function Fingerprint() {
       </Section>
 
       <Section fluid className='py-[120px]'>
-        <div className='2xl:max-w-[792px] mx-auto'>
+        <ReadingSection>
           <h3 className='text-large font-medium mb-[40px]'>Wireframing</h3>
           <p className='text-medium'>
             Once we had the new architecture, I created prototypes to explore
@@ -183,7 +185,7 @@ function Fingerprint() {
             existing users via InVision and Maze, iterating on the feedback
             before starting to develop it.
           </p>
-        </div>
+        </ReadingSection>
         <img
           src={designingImage5}
           alt='Wireframing Tiendanube'
@@ -192,7 +194,7 @@ function Fingerprint() {
       </Section>
 
       <Section fluid className='py-[120px]'>
-        <div className='2xl:max-w-[792px] mx-auto'>
+        <ReadingSection className='mt-[60px]'>
           <h3 className='text-large font-medium mb-[40px]'>Implementation</h3>
           <p className='text-medium'>
             We decided on an MVP to be able to have the first launch in less
@@ -205,7 +207,7 @@ function Fingerprint() {
             adjustments before scaling it to everyone. Over time, the full admin
             migrated to the new structure.
           </p>
-        </div>
+        </ReadingSection>
         <div className='flex flex-col gap-[60px]'>
           <img
             src={tiendanubeImplementation}

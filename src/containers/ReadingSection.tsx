@@ -10,7 +10,7 @@ interface Props {
   style?: React.CSSProperties
 }
 
-const Section: React.FC<Props> = ({
+const ReadingSection: React.FC<Props> = ({
   children,
   className = '',
   fluid = false,
@@ -23,11 +23,11 @@ const Section: React.FC<Props> = ({
       className={`${getBackgroundClass(background)} ${className}`}
       style={style}
     >
-      <div className={fluid ? '' : 'max-w-[85%] 2xl:max-w-[1200px] mx-auto'}>
+      <div className={fluid ? '' : 'max-w-[85%] lg:max-w-[792px] mx-auto'}>
         {children}
       </div>
     </Component>
   )
 }
 
-export default Section
+export default ReadingSection
