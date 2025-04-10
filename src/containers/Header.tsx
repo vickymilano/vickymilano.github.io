@@ -1,6 +1,10 @@
 import cv from '../assets/files/cv.pdf'
 
-const Header: React.FC = () => {
+interface Props {
+  onLetsTalk?: (ev: React.MouseEvent<HTMLAnchorElement>) => void
+}
+
+const Header: React.FC<Props> = ({ onLetsTalk }) => {
   return (
     <div className='sticky flex justify-between items-center h-[84px] font-medium'>
       <div>
@@ -10,7 +14,9 @@ const Header: React.FC = () => {
         <a href={cv} download='Vicky Milano - CV.pdf'>
           CV
         </a>
-        <a href='#'>LET'S TALK</a>
+        <a href={`${import.meta.env.BASE_URL}#lets-talk`} onClick={onLetsTalk}>
+          LET'S TALK
+        </a>
       </div>
     </div>
   )

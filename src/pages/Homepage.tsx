@@ -8,10 +8,29 @@ import arrow from '../assets/icons/arrow-down.svg'
 
 import { Page, Section, Project } from '../components'
 import { Header } from '../containers'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 
 function Homepage() {
   const smartInterviewsRef = useRef<HTMLElement>(null)
+  const letsTalkRef = useRef<HTMLElement>(null)
+
+  const handleScrollToLetsTalk = () => {
+    if (!letsTalkRef.current) return
+
+    const offsetTop =
+      letsTalkRef.current.getBoundingClientRect().top + window.scrollY
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth',
+    })
+  }
+
+  useEffect(() => {
+    if (window.location.hash === '#lets-talk') {
+      const timeout = setTimeout(() => handleScrollToLetsTalk(), 100)
+      return () => clearTimeout(timeout)
+    }
+  }, [])
 
   const handleScrollToFirstProject = () => {
     if (!smartInterviewsRef.current) {
@@ -26,7 +45,12 @@ function Homepage() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <Section className='pb-[74px]'>
-        <Header />
+        <Header
+          onLetsTalk={(ev) => {
+            ev.preventDefault()
+            handleScrollToLetsTalk()
+          }}
+        />
 
         <div className='flex flex-col mt-[60px] 2xl:mt-[136px] font-medium'>
           <p>
@@ -114,8 +138,10 @@ function Homepage() {
         imageClassName='xl:scale-100'
       />
       <Section
+        ref={letsTalkRef}
         background='purple'
-        className='py-[120px]  bg-grid bg-[length:20px_20px]'
+        className='py-[120px] bg-grid bg-[length:20px_20px]'
+        id='lets-talk'
       >
         <article className='flex flex-col gap-16 2xl:flex-row justify-between 2xl:items-end text-white'>
           <div className='flex flex-col gap-16 max-w-[670px]'>
