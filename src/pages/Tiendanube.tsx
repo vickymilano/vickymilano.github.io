@@ -10,8 +10,12 @@ import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
 import Card from '../components/Card'
 import ReadingSection from '../containers/ReadingSection'
+import useLetsTalk from '../hooks/use-lets-talk'
+import { LetsTalk } from '../containers'
 
 function Fingerprint() {
+  const { letsTalkRef, handleScrollToLetsTalk } = useLetsTalk()
+
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <ProjectCover
@@ -21,6 +25,7 @@ function Fingerprint() {
         title='Redesigning Tiendanube’s Admin'
         image={projectCover}
         imageClassName='2xl:max-h-[500px]'
+        onLetsTalk={handleScrollToLetsTalk}
       />
 
       <ReadingSection className='py-[60px] lg:py-[120px]'>
@@ -226,6 +231,8 @@ function Fingerprint() {
           />
         </div>
       </Section>
+
+      <LetsTalk ref={letsTalkRef} />
 
       <Section
         className='text-center text-small my-[20px] font-medium'

@@ -5,11 +5,16 @@ import designingImage2 from '../assets/images/designing-02.png'
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
 import ReadingSection from '../containers/ReadingSection'
+import useLetsTalk from '../hooks/use-lets-talk'
+import { LetsTalk } from '../containers'
 
 function Fingerprint() {
+  const { letsTalkRef, handleScrollToLetsTalk } = useLetsTalk()
+
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <ProjectCover
+        onLetsTalk={handleScrollToLetsTalk}
         year={2024}
         color='blue'
         client='Government of Buenos Aires'
@@ -267,7 +272,7 @@ function Fingerprint() {
         </ReadingSection>
       </Section>
 
-      <Section fluid className='pb-[120px]'>
+      <Section fluid className='pb-[80px]'>
         <div
           className='flex w-full justify-center'
           style={{
@@ -288,6 +293,8 @@ function Fingerprint() {
           </Box>
         </ReadingSection>
       </Section>
+
+      <LetsTalk ref={letsTalkRef} />
 
       <Section
         className='text-center text-small my-[20px] font-medium'

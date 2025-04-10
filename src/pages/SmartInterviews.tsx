@@ -9,6 +9,8 @@ import pixelSparks from '../assets/images/pixel-sparks.png'
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
 import ReadingSection from '../containers/ReadingSection'
+import useLetsTalk from '../hooks/use-lets-talk'
+import { LetsTalk } from '../containers'
 
 const designingNotes = [
   'What if AI could create a score in order to quickly make decisions and compare candidates?',
@@ -44,6 +46,8 @@ const keyDesignDecisions = [
 ]
 
 function SmartInterviews() {
+  const { letsTalkRef, handleScrollToLetsTalk } = useLetsTalk()
+
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <ProjectCover
@@ -53,6 +57,7 @@ function SmartInterviews() {
         title='Smart interviews'
         image={projectCover}
         imageClassName='w-[719px] h-[458px]'
+        onLetsTalk={handleScrollToLetsTalk}
       />
 
       <ReadingSection className='py-[60px] lg:py-[120px]'>
@@ -258,6 +263,8 @@ function SmartInterviews() {
           </Box>
         </ReadingSection>
       </div>
+
+      <LetsTalk ref={letsTalkRef} />
 
       <Section
         className='text-center text-small my-[20px] font-medium'

@@ -12,6 +12,7 @@ interface Props {
   className?: string
   imageClassName?: string
   color?: BackgroundColor
+  onLetsTalk?: (ev: React.MouseEvent<HTMLAnchorElement>) => void
 }
 
 const ProjectCover: React.FC<Props> = ({
@@ -22,6 +23,7 @@ const ProjectCover: React.FC<Props> = ({
   className = '',
   imageClassName = '',
   color = 'white',
+  onLetsTalk,
 }) => {
   return (
     <Section className='relative w-full overflow-hidden' background='white'>
@@ -37,7 +39,7 @@ const ProjectCover: React.FC<Props> = ({
         style={{ backgroundColor: 'transparent' }}
       >
         <Section fluid style={{ backgroundColor: 'transparent' }}>
-          <Header />
+          <Header onLetsTalk={onLetsTalk} />
 
           <article
             className={`flex flex-col lg:flex-row flex-1 justify-between mt-[40px] lg:mt-[50px] 2xl:gap-[54px] ${className}`}

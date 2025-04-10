@@ -7,30 +7,13 @@ import tiendanube from '../assets/images/tiendanube.png'
 import arrow from '../assets/icons/arrow-down.svg'
 
 import { Page, Section, Project } from '../components'
-import { Header } from '../containers'
-import { useRef, useEffect } from 'react'
+import { Header, LetsTalk } from '../containers'
+import useLetsTalk from '../hooks/use-lets-talk'
+import { useRef } from 'react'
 
 function Homepage() {
   const smartInterviewsRef = useRef<HTMLElement>(null)
-  const letsTalkRef = useRef<HTMLElement>(null)
-
-  const handleScrollToLetsTalk = () => {
-    if (!letsTalkRef.current) return
-
-    const offsetTop =
-      letsTalkRef.current.getBoundingClientRect().top + window.scrollY
-    window.scrollTo({
-      top: offsetTop,
-      behavior: 'smooth',
-    })
-  }
-
-  useEffect(() => {
-    if (window.location.hash === '#lets-talk') {
-      const timeout = setTimeout(() => handleScrollToLetsTalk(), 100)
-      return () => clearTimeout(timeout)
-    }
-  }, [])
+  const { letsTalkRef, handleScrollToLetsTalk } = useLetsTalk()
 
   const handleScrollToFirstProject = () => {
     if (!smartInterviewsRef.current) {
@@ -45,12 +28,7 @@ function Homepage() {
   return (
     <Page className='divide-y-2 divide-solid divide-black'>
       <Section className='pb-[74px]'>
-        <Header
-          onLetsTalk={(ev) => {
-            ev.preventDefault()
-            handleScrollToLetsTalk()
-          }}
-        />
+        <Header onLetsTalk={handleScrollToLetsTalk} />
 
         <div className='flex flex-col mt-[60px] 2xl:mt-[136px] font-medium'>
           <p>
@@ -79,7 +57,7 @@ function Homepage() {
         subtitle='Designing a new product vertical to analyze candidates interviews using AI.'
         background='purple-light'
         link={`${import.meta.env.BASE_URL}smart-interviews`}
-        className='py-[140px]! pb-[120px]!'
+        className='py-[140px]! pb-[120px]! max-w-[100%]'
         mainImage={{
           src: smartInterviews,
           alt: 'Smart interviews',
@@ -137,37 +115,7 @@ function Homepage() {
         }}
         imageClassName='xl:scale-100'
       />
-      <Section
-        ref={letsTalkRef}
-        background='purple'
-        className='py-[120px] bg-grid bg-[length:20px_20px]'
-        id='lets-talk'
-      >
-        <article className='flex flex-col gap-16 2xl:flex-row justify-between 2xl:items-end text-white'>
-          <div className='flex flex-col gap-16 max-w-[670px]'>
-            <p className='text-small'>
-              I like to design with purpose, not just pretty pixels.
-            </p>
-            <h3 className='text-large2'>Let's build something that matters.</h3>
-          </div>
-          <div className='flex flex-col gap-[40px] mr-[90px] text-[24px]'>
-            <a
-              className='text-medium lg:text-medium2'
-              href='mailto:vickymilanog@gmail.com'
-              target='_blank'
-            >
-              <span className='underline'>vickymilanog@gmail.com</span> ↗
-            </a>
-            <a
-              className='text-medium lg:text-medium2'
-              href='https://www.linkedin.com/in/vicky-milano'
-              target='_blank'
-            >
-              <span className='underline'>LinkedIn</span> ↗
-            </a>
-          </div>
-        </article>
-      </Section>
+      <LetsTalk ref={letsTalkRef} />
       <Section
         className='text-center text-small my-[20px] font-medium'
         as='footer'
