@@ -264,6 +264,7 @@ function SmartInterviews() {
         as='footer'
       >
         <button
+          className='cursor-pointer'
           onClick={() =>
             window.scrollTo({
               top: 0,
