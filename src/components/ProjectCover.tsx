@@ -58,7 +58,7 @@ const ProjectCover: React.FC<Props> = ({
             <img
               src={image}
               alt={title}
-              className={`${imageClassName} 2xl:relative 2xl:right-[-100px]`}
+              className={`${imageClassName} 2xl:relative 2xl:right-[-100px] object-contain md:max-w-[500px] xl:max-w-[unset]`}
             />
           </article>
         </Section>
