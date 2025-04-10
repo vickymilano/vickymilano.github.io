@@ -41,7 +41,7 @@ const Project = forwardRef<HTMLElement, Props>(
     ref
   ) => {
     return (
-      <Section background={background} className='overflow-y-hidden'>
+      <Section background={background} className='overflow-hidden'>
         <article
           ref={ref}
           id={id}
