@@ -39,7 +39,7 @@ function Fingerprint() {
         </p>
         <Box color='grey/25' className='mt-[29px]'>
           <h3 className='text-medium font-medium'>My role</h3>
-          <p className='text-medium mt-[20px]'>
+          <div className='text-medium mt-[20px]'>
             Led the UX and UI design from discovery to implementation:
             <ul className='mt-[10px] ml-[40px] flex flex-col gap-[10px]'>
               <li>Conducted user interviews and research</li>
@@ -48,11 +48,11 @@ function Fingerprint() {
               <li>Implemented most of the frontend code</li>
               <li>Supported rollout and feedback loops</li>
             </ul>
-          </p>
+          </div>
         </Box>
       </ReadingSection>
 
-      <Section fluid className='py-[80px] lg:py-[120px]'>
+      <Section fluid className='py-[60px] lg:py-[120px]'>
         <ReadingSection>
           <h3 className='text-large font-medium mb-[12px]'>Understanding</h3>
           <p className='text-medium mt-[20px]'>
@@ -110,7 +110,7 @@ function Fingerprint() {
           </p>
         </ReadingSection>
 
-        <div className='flex flex-col md:flex-row items-center justify-center 2xl:w-[930px] gap-[20px] mx-auto mt-[60px]'>
+        <div className='flex flex-col md:flex-row items-center justify-center 2xl:w-[930px] gap-[40px] md:gap-[20px] mx-auto mt-[60px]'>
           <StickyNote size='big' color='grey'>
             Users don’t think in terms of features, they think in terms of
             actions.
@@ -126,14 +126,14 @@ function Fingerprint() {
         </div>
       </Section>
 
-      <Section fluid className='py-[120px]'>
+      <Section fluid className='py-[60px] lg:py-[120px]'>
         <ReadingSection>
-          <h3 className='text-large font-medium mb-[60px]'>Designing</h3>
+          <h3 className='text-large font-medium'>Designing</h3>
         </ReadingSection>
         <Box color='white' className='flex justify-center'>
           <img src={designingImage3} alt='Designing Tiendanube' />
         </Box>
-        <ReadingSection className='mt-[60px]'>
+        <ReadingSection className='lg:mt-[60px]'>
           <h4 className='text-medium2 font-medium mb-[20px]'>
             Reframing the structure around user actions:
           </h4>
@@ -176,7 +176,7 @@ function Fingerprint() {
         </Section>
       </Section>
 
-      <Section fluid className='py-[120px]'>
+      <Section fluid className='py-[60px] lg:py-[120px]'>
         <ReadingSection>
           <h3 className='text-large font-medium mb-[40px]'>Wireframing</h3>
           <p className='text-medium'>
@@ -193,7 +193,7 @@ function Fingerprint() {
         />
       </Section>
 
-      <Section fluid className='py-[120px]'>
+      <Section fluid className='py-[60px] lg:py-[120px]'>
         <ReadingSection className='mt-[60px]'>
           <h3 className='text-large font-medium mb-[40px]'>Implementation</h3>
           <p className='text-medium'>

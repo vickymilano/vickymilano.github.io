@@ -4,6 +4,7 @@ import designingImage2 from '../assets/images/designing-02.png'
 
 import { Page, Section, ProjectCover, StickyNote } from '../components'
 import Box from '../components/Box'
+import ReadingSection from '../containers/ReadingSection'
 
 function Fingerprint() {
   return (
@@ -65,7 +66,7 @@ function Fingerprint() {
 
       <Section className='py-[60px] lg:py-[120px]'>
         <div className='2xl:max-w-[792px] mx-auto'>
-          <h3 className='text-large font-medium mb-[12px]'>Underestanding</h3>
+          <h3 className='text-large font-medium mb-[12px]'>Understanding</h3>
           <p className='text-medium'>
             Before starting to design, I talked with people who work (or used to
             work) in the prison system to better understand the context. This
@@ -198,7 +199,7 @@ function Fingerprint() {
         </div>
       </Section>
 
-      <Section fluid className='py-[120px]'>
+      <Section fluid className='py-[60px] lg:py-[120px]'>
         <Section>
           <h3 className='text-large font-medium mb-[60px]'>Designing</h3>
         </Section>
@@ -265,8 +266,8 @@ function Fingerprint() {
         >
           <img src={designingImage2} alt='Designing Example' />
         </div>
-        <div className='flex justify-center mt-[74px]'>
-          <Box color='blue/10' className='w-[729px]'>
+        <ReadingSection className='flex justify-center mt-[74px]'>
+          <Box color='blue/10'>
             <h4 className='text-medium font-medium'>Pilot & next steps</h4>
             <p className='text-medium'>
               The tool is currently being piloted in one prison. After feedback
@@ -274,7 +275,7 @@ function Fingerprint() {
               Province.
             </p>
           </Box>
-        </div>
+        </ReadingSection>
       </Section>
 
       <Section

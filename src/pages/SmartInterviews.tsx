@@ -12,7 +12,6 @@ import Box from '../components/Box'
 const designingNotes = [
   'What if AI could create a score in order to quickly make decisions and compare candidates?',
   "How could it help order the recruiter's job? What is the next action they need to do?",
-  'What if AI could summarize strengths, and risks?',
   'What if transcripts were the primary way to navigate a video?',
   'What if recruiters could approve, dismiss, or edit what the AI suggests?',
   "How can we generate trust? What if we made the model's “thinking” visible?",
@@ -142,7 +141,7 @@ function SmartInterviews() {
       </Section>
 
       <Section fluid className='py-[120px]'>
-        <div className='2xl:max-w-[792px] mx-auto'>
+        <div className='2xl:max-w-[1200px] mx-auto'>
           <div className='mb-[60px]'>
             <h3 className='text-large font-medium mb-[12px]'>Designing</h3>
             <p className='text-medium'>
@@ -158,7 +157,7 @@ function SmartInterviews() {
           </div>
           <div className='flex flex-wrap 2xl:gap-[60px] my-[60px]'>
             {designingNotes.map((note, index) => (
-              <StickyNote key={index} size='small' color='purple-light'>
+              <StickyNote key={index} size='big' color='purple-light'>
                 {note}
               </StickyNote>
             ))}
